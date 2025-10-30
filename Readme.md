@@ -1,13 +1,12 @@
 ### Valkyrie Profile 2: Silmeria [SLUS-21452 CC96CE93]
 
-Let the game remove characters when they're suppsoed to be removed in the story
-
-- The current code wont let any main character be removed from the party, not even when they're supposed to
-
 Lower the character's level when they join the team in the beginning of the game
 
 - Find a way to make the characters be level 1 when they join the starting party. Probably will have to look for an initial setup.
-  This will be really hard to do since this setup can be anywhere
+  This will be really hard to do since this setup could be anywhere
+
+- Also, when random characters join the team, their level will be an average of the team total level, so lowering the level
+  of the characters will solve this too
 
 Multiple copies of a character without having to go to the debugger
 
