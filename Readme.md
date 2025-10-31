@@ -11,3 +11,7 @@ Lower the character's level when they join the team in the beginning of the game
 Multiple copies of a character without having to go to the debugger
 
 - Change the code that creates 99 copies of a character to create only 2 or 4. Can be done with extended script
+
+Tutorial for multiple copies of the same character
+
+[![Watch the video](https://img.youtube.com/vi/KTa5c93oCUE/hqdefault.jpg)](https://youtu.be/KTa5c93oCUE)
