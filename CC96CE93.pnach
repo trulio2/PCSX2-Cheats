@@ -245,6 +245,7 @@ patch=1,EE,01feafbc,word,00000000
 
 // Freya, Lenneth, Silmeria, Hrist, Valkyrie and Brahms are loaded only after chapter 5,
 // trying to add them to the team before it will break the game. Use one of these until a way to load them in chapter 1 is discovered
+// It looks like this code is not necessary in the new game plus (maybe because of the seraphic gate being available from the beginning, might be a hint here)
 // Both can be disabled after getting to the Hall of Valhalla, there won't be any problems with any characters after this point
 [Anti Freeze Option 1 (choose only one)]
 author=
