@@ -2,7 +2,7 @@ gametitle=Valkyrie Profile 2: Silmeria [SLUS-21452 CC96CE93]
 
 [Main code to allow cheats]
 author=
-description=must be on
+description=must be always on
 patch=1,EE,00205ad8,word,087fac70
 patch=1,EE,00205adc,word,00000000
 patch=1,EE,01feb1c0,word,90830099
@@ -245,7 +245,7 @@ patch=1,EE,01feafbc,word,00000000
 
 // Freya, Lenneth, Silmeria, Hrist, Valkyrie and Brahms are loaded only after chapter 5,
 // trying to add them to the team before it will break the game. Use one of these until a way to load them in chapter 1 is discovered
-// Both can be disabled after getting to the Hall of Valhalla
+// Both can be disabled after getting to the Hall of Valhalla, there won't be any problems with any characters after this point
 [Anti Freeze Option 1 (choose only one)]
 author=
 description=Will cause visual bugs (better option for now)
@@ -282,7 +282,7 @@ patch=1,EE,01feae20,word,00000000
 patch=1,EE,01feae24,word,03e00008
 patch=1,EE,01feae28,word,0200102d
 
-// Seems like the game keep flags for characters that are not supposed to be in the party at the current time, and will run a function to remove then after every cutscenes and other events
+// Seems like the game keep flags for characters that are not supposed to be in the party at the current time, and will run a function to remove them after every cutscenes and other events
 // Characters will be removed if added before they're supposed to, or if they're added again after leaving the party in the story.
 // For some reason the game doesn't try to remove Freya, so you don't need this code if you're adding only her
 // I guess it's because she's not a "normal" playable story character, since she only joins in Seraphic Gate
