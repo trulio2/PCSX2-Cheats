@@ -132,6 +132,21 @@ patch=1,EE,01fead70,word,2645003c
 patch=1,EE,01fead74,word,0C0F0832
 patch=1,EE,01fead78,word,00000000
 
+[Add Randoms]
+author=Trulio
+description=Adds more Random characters together with Mithra. Change the id to get other character, or add more lines. Disable this cheat after saving
+patch=1,EE,003C20C4,word,0C7FAB60
+patch=1,EE,01fead80,word,02A0202D
+patch=1,EE,01fead84,word,26450022
+patch=1,EE,01fead88,word,0C0ED754
+patch=1,EE,01fead8c,word,00000000
+patch=1,EE,01fead90,word,26450037
+patch=1,EE,01fead94,word,0C0ED754
+patch=1,EE,01fead98,word,00000000
+patch=1,EE,01fead9c,word,2645003c
+patch=1,EE,01feada0,word,0C0F0832
+patch=1,EE,01feada4,word,00000000
+
 [Add characters to the initial party]
 author=
 description=Adds Valkyrie, Lenneth, Hrist, Silmeria, Freya and Brahms to the initial party. Disable this cheat after saving. (check the tutorial for how to get multiple copies of the same character)
