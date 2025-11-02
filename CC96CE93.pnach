@@ -261,7 +261,7 @@ patch=1,EE,01feafb8,word,00000000
 patch=1,EE,01feafbc,word,00000000
 
 // Freya, Lenneth, Silmeria, Hrist, Valkyrie and Brahms are loaded only after chapter 5,
-// trying to add them to the team before it will break the game. Use one of these until a way to load them in chapter 1 is discovered
+// trying to add them to the team before it will break the game. You'll need an antifreeze code until a way to load them in chapter 1 is discovered
 // Can be disabled after getting to the Hall of Valhalla, there won't be any problems with any characters after this point
 [Anti Freeze]
 author=
