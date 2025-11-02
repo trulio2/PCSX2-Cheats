@@ -262,8 +262,8 @@ patch=1,EE,01feafbc,word,00000000
 
 // Freya, Lenneth, Silmeria, Hrist, Valkyrie and Brahms are loaded only after chapter 5,
 // trying to add them to the team before it will break the game. Use one of these until a way to load them in chapter 1 is discovered
-// Both can be disabled after getting to the Hall of Valhalla, there won't be any problems with any characters after this point
-[Anti Freeze Option 1 (choose only one)]
+// Can be disabled after getting to the Hall of Valhalla, there won't be any problems with any characters after this point
+[Anti Freeze]
 author=
 description=Will cause visual bugs (better option for now)
 patch=1,EE,00113318,word,0c7fac17
@@ -277,27 +277,6 @@ patch=1,EE,01feb074,word,a12a0149
 patch=1,EE,01feb078,word,00000000
 patch=1,EE,01feb07c,word,03e00008
 patch=1,EE,01feb080,word,0200102d
-
-[Anti Freeze Option 2 (choose only one)]
-author=
-description=Will cause gameplay bugs, like divine time giver bug, cannot escape battles and others
-patch=1,EE,00113318,word,0c7fab7b
-patch=1,EE,01feadec,word,3c05001d
-patch=1,EE,01feadf0,word,8ca53698
-patch=1,EE,01feadf4,word,10a00005
-patch=1,EE,01feadf8,word,00000000
-patch=1,EE,01feadfc,word,90a40149
-patch=1,EE,01feae00,word,34840017
-patch=1,EE,01feae04,word,a0a40149
-patch=1,EE,01feae08,word,00000000
-patch=1,EE,01feae0c,word,2405282d
-patch=1,EE,01feae10,word,3c04003b
-patch=1,EE,01feae14,word,848659cc
-patch=1,EE,01feae18,word,50a60002
-patch=1,EE,01feae1c,word,ac8059d0
-patch=1,EE,01feae20,word,00000000
-patch=1,EE,01feae24,word,03e00008
-patch=1,EE,01feae28,word,0200102d
 
 // Seems like the game keep flags for characters that are not supposed to be in the party at the current time, and will run a function to remove them after every cutscenes and other events
 // Characters will be removed if added before they're supposed to, or if they're added again after leaving the party in the story.
