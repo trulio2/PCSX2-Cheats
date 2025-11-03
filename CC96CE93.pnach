@@ -111,7 +111,7 @@ author=Trulio
 description=Changes Ether Laser atk and hit. base is 1400 atk(578 hex) 50 hit(32 hex)
 patch=1,EE,D06600DC,extended,00000217
 patch=1,EE,206600DC,extended,00010217
-patch=1,EE,0031C10C,word,13DC0005
+patch=1,EE,0031C10C,word,13DC0032
 patch=1,EE,0031C110,word,00000000
 patch=1,EE,0031C114,word,00000032
 
@@ -120,32 +120,53 @@ author=Trulio
 description=Changes Angel Slayer to allow for 3 attacks
 patch=1,EE,00315280,word,c0000000
 
-[Freya]
+[Mithra]
 author=Trulio
-description=Adds Freya when Mithra joins. Disable this cheat after saving
-patch=1,EE,003C20C4,word,0C7FAB58
-patch=1,EE,01fead60,word,02A0202D
-patch=1,EE,01fead64,word,2645000d
-patch=1,EE,01fead68,word,0C0ED754
-patch=1,EE,01fead6c,word,00000000
-patch=1,EE,01fead70,word,2645003c
-patch=1,EE,01fead74,word,0C0F0832
-patch=1,EE,01fead78,word,00000000
-
-[Add Randoms]
-author=Trulio
-description=Adds more Random characters together with Mithra. Change the id to get other character, or add more lines. Disable this cheat after saving
-patch=1,EE,003C20C4,word,0C7FAB60
+description=4 Freyas, Lenneth, Hrist, Silmeria, Valkyrie, Brahms, Leone, Arngrim and Lezard together with Mithra
+patch=1,EE,D03B5DDC,extended,100000B6
+patch=1,EE,203B5DDC,extended,00000000
+patch=1,EE,D03C20C4,extended,02A0202D
+patch=1,EE,203C20C4,extended,087FAB60
 patch=1,EE,01fead80,word,02A0202D
-patch=1,EE,01fead84,word,26450022
+patch=1,EE,01fead84,word,2405003c
 patch=1,EE,01fead88,word,0C0ED754
 patch=1,EE,01fead8c,word,00000000
-patch=1,EE,01fead90,word,26450037
+patch=1,EE,01fead90,word,2405000d
 patch=1,EE,01fead94,word,0C0ED754
 patch=1,EE,01fead98,word,00000000
-patch=1,EE,01fead9c,word,2645003c
-patch=1,EE,01feada0,word,0C0F0832
+patch=1,EE,01fead9c,word,2405000d
+patch=1,EE,01feada0,word,0C0ED754
 patch=1,EE,01feada4,word,00000000
+patch=1,EE,01feada8,word,2405000d
+patch=1,EE,01feadac,word,0C0ED754
+patch=1,EE,01feadb0,word,00000000
+patch=1,EE,01feadb4,word,2405000d
+patch=1,EE,01feadb8,word,0C0ED754
+patch=1,EE,01feadbc,word,00000000
+patch=1,EE,01feadc0,word,24050009
+patch=1,EE,01feadc4,word,0C0ED754
+patch=1,EE,01feadc8,word,00000000
+patch=1,EE,01feadcc,word,24050008
+patch=1,EE,01feadd0,word,0C0ED754
+patch=1,EE,01feadd4,word,00000000
+patch=1,EE,01feadd8,word,24050001
+patch=1,EE,01feaddc,word,0C0ED754
+patch=1,EE,01feade0,word,00000000
+patch=1,EE,01feade4,word,2405000a
+patch=1,EE,01feade8,word,0C0ED754
+patch=1,EE,01feadec,word,00000000
+patch=1,EE,01feadf0,word,24050002
+patch=1,EE,01feadf4,word,0C0ED754
+patch=1,EE,01feadf8,word,00000000
+patch=1,EE,01feadfc,word,24050007
+patch=1,EE,01feae00,word,0C0ED754
+patch=1,EE,01feae04,word,00000000
+patch=1,EE,01feae08,word,24050004
+patch=1,EE,01feae0c,word,0C0ED754
+patch=1,EE,01feae10,word,00000000
+patch=1,EE,01feae14,word,24050005
+patch=1,EE,01feae1c,word,080F0832
+patch=1,EE,01feae20,word,00000000
 
 [Add characters to the initial party]
 author=
@@ -265,18 +286,18 @@ patch=1,EE,01feafbc,word,00000000
 // Can be disabled after getting to the Hall of Valhalla, there won't be any problems with any characters after this point
 [Anti Freeze]
 author=
-description=Will cause visual bugs (better option for now)
-patch=1,EE,00113318,word,0c7fac17
-patch=1,EE,01feb05c,word,3c09001d
-patch=1,EE,01feb060,word,8d293698
-patch=1,EE,01feb064,word,11200005
-patch=1,EE,01feb068,word,00000000
-patch=1,EE,01feb06c,word,912a0149
-patch=1,EE,01feb070,word,354a0010
-patch=1,EE,01feb074,word,a12a0149
-patch=1,EE,01feb078,word,00000000
-patch=1,EE,01feb07c,word,03e00008
-patch=1,EE,01feb080,word,0200102d
+description=Will cause visual bugs
+patch=1,EE,00113318,word,0C7FAC40
+patch=1,EE,01feb100,word,3c09001d
+patch=1,EE,01feb104,word,8d293698
+patch=1,EE,01feb108,word,11200005
+patch=1,EE,01feb10c,word,00000000
+patch=1,EE,01feb110,word,912a0149
+patch=1,EE,01feb114,word,354a0010
+patch=1,EE,01feb118,word,a12a0149
+patch=1,EE,01feb11c,word,00000000
+patch=1,EE,01feb120,word,03e00008
+patch=1,EE,01feb124,word,0200102d
 
 // Seems like the game keep flags for characters that are not supposed to be in the party at the current time, and will run a function to remove them after every cutscenes and other events
 // Characters will be removed if added before they're supposed to, or if they're added again after leaving the party in the story.
@@ -284,12 +305,13 @@ patch=1,EE,01feb080,word,0200102d
 // I guess it's because she's not a "normal" playable story character, since she only joins in Seraphic Gate
 [Stop the game from removing characters]
 author=Trulio
-description=Stop the game from removing Brahms, Lenneth, Silmeria, Hrist and Valkyrie from the party (they won't be removed even if they're supposed to at that point in the story)
+description=Stop the game from removing Brahms, Lenneth, Silmeria, Hrist, Valkyrie, Leone, Arngrim and Lezard from the party (they won't be removed even if they're supposed to at that point in the story)
 patch=1,EE,D03BB5C8,extended,0100282D
 patch=1,EE,203BB5C8,extended,0C7FAC00
 patch=1,EE,01feaff0,word,00004021
-patch=1,EE,01feaff4,word,10000011
+patch=1,EE,01feaff4,word,10000017
 patch=1,EE,01feaff8,word,00000000
+patch=1,EE,01feaffc,word,00000000
 patch=1,EE,01feb000,word,24010009
 patch=1,EE,01feb004,word,1101fffa
 patch=1,EE,01feb008,word,00000000
@@ -305,22 +327,31 @@ patch=1,EE,01feb02c,word,00000000
 patch=1,EE,01feb030,word,24010002
 patch=1,EE,01feb034,word,1101FFEE
 patch=1,EE,01feb038,word,00000000
-patch=1,EE,01feb03c,word,0100282d
-patch=1,EE,01feb040,word,0c0eed73
+patch=1,EE,01feb03c,word,24010005
+patch=1,EE,01feb040,word,1101FFEb
 patch=1,EE,01feb044,word,00000000
+patch=1,EE,01feb048,word,24010007
+patch=1,EE,01feb04c,word,1101FFE8
+patch=1,EE,01feb050,word,00000000
+patch=1,EE,01feb054,word,24010004
+patch=1,EE,01feb058,word,1101FFE5
+patch=1,EE,01feb05c,word,00000000
+patch=1,EE,01feb060,word,0100282d
+patch=1,EE,01feb064,word,080eed73
+patch=1,EE,01feb068,word,00000000
 
 
-// Use this to make these characters be level 1 when you're using the code to add them in the beginning of the game, or if adding together with Mithra (002F8D68 important)
-[Characters join at level 1]
+// Will crash the game if you battle with this code active. Use this to make these characters be level 1 when you're using the code to add them in the beginning of the game, or if adding together with Mithra (002F8D68 important)
+[Characters join at level 1(Disable this code as soon as possible)]
 author=Trulio
-description=Freya, Brahms, Lenneth, Hrist, Silmeria and Valkryie will be level 1 when they join the party. Since they don't have level 1 stats, i made it the f up. Disable this cheat after saving
+description=Freya, Brahms, Lenneth, Hrist, Silmeria and Valkryie will be level 1 when they join the party. Since they don't have level 1 stats, i made it the f up
 patch=1,EE,D02F8E54,extended,00628024
 patch=1,EE,202F8E54,extended,087FAD80
 patch=1,EE,D02F8E58,extended,24060028
 patch=1,EE,202F8E58,extended,00000000
 patch=1,EE,01FEB600,word,3C080054
 patch=1,EE,01FEB604,word,35089090
-patch=1,EE,01FEB608,word,14880007
+patch=1,EE,01FEB608,word,14880013
 patch=1,EE,01FEB60c,word,00000000
 patch=1,EE,01FEB610,word,2008000C
 patch=1,EE,01FEB614,word,1268002F
@@ -344,7 +375,7 @@ patch=1,EE,01FEB658,word,20080000
 patch=1,EE,01FEB65c,word,20170000
 patch=1,EE,01FEB660,word,00628024
 patch=1,EE,01FEB664,word,24060028
-patch=1,EE,01FEB668,word,080BE397
+patch=1,EE,01FEB668,word,080BE396
 patch=1,EE,01FEB66c,word,00000000
 patch=1,EE,01FEB670,word,00000000
 patch=1,EE,01FEB674,word,20A80000
