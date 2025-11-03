@@ -285,19 +285,9 @@ patch=1,EE,01feafbc,word,00000000
 // trying to add them to the team before it will break the game. You'll need an antifreeze code until a way to load them in chapter 1 is discovered
 // Can be disabled after getting to the Hall of Valhalla, there won't be any problems with any characters after this point
 [Anti Freeze]
-author=
-description=Will cause visual bugs
-patch=1,EE,00113318,word,0C7FAC40
-patch=1,EE,01feb100,word,3c09001d
-patch=1,EE,01feb104,word,8d293698
-patch=1,EE,01feb108,word,11200005
-patch=1,EE,01feb10c,word,00000000
-patch=1,EE,01feb110,word,912a0149
-patch=1,EE,01feb114,word,354a0010
-patch=1,EE,01feb118,word,a12a0149
-patch=1,EE,01feb11c,word,00000000
-patch=1,EE,01feb120,word,03e00008
-patch=1,EE,01feb124,word,0200102d
+author=Trulio
+description=need tests
+patch=1,EE,003C0300,word,20030001
 
 // Seems like the game keep flags for characters that are not supposed to be in the party at the current time, and will run a function to remove them after every cutscenes and other events
 // Characters will be removed if added before they're supposed to, or if they're added again after leaving the party in the story.
