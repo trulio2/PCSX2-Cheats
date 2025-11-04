@@ -128,40 +128,42 @@ patch=1,EE,203C0300,extended,20030001
 // I guess it's because she's not a "normal" playable story character, since she only joins in Seraphic Gate
 [Stop the game from removing characters]
 author=Trulio
-description=Stop the game from removing Brahms, Lenneth, Silmeria, Hrist, Valkyrie, Leone, Arngrim and Lezard from the party (they won't be removed even if they're supposed to at that point in the story)
+description=Stop the game from removing Brahms, Lenneth, Silmeria, Hrist, Valkyrie, Leone, Arngrim, Lezard and Dylan from the party (they won't be removed even if they're supposed to at that point in the story)
 patch=1,EE,D03BB5C8,extended,0000282D
 patch=1,EE,203BB5C8,extended,087FAC00
-patch=1,EE,01feaff0,word,00004021
-patch=1,EE,01feaff4,word,1000001a
-patch=1,EE,01feaff8,word,00000000
+patch=1,EE,01feaff4,word,00004021
+patch=1,EE,01feaff8,word,1000001c
 patch=1,EE,01feaffc,word,00000000
 patch=1,EE,01feb000,word,24010009
-patch=1,EE,01feb004,word,1101fffa
+patch=1,EE,01feb004,word,1101fffb
 patch=1,EE,01feb008,word,00000000
 patch=1,EE,01feb00c,word,24010008
-patch=1,EE,01feb010,word,1101FFF7
+patch=1,EE,01feb010,word,1101FFF8
 patch=1,EE,01feb014,word,00000000
 patch=1,EE,01feb018,word,2401000a
-patch=1,EE,01feb01c,word,1101FFF4
+patch=1,EE,01feb01c,word,1101FFF5
 patch=1,EE,01feb020,word,00000000
 patch=1,EE,01feb024,word,24010001
-patch=1,EE,01feb028,word,1101FFF1
+patch=1,EE,01feb028,word,1101FFF2
 patch=1,EE,01feb02c,word,00000000
 patch=1,EE,01feb030,word,24010002
-patch=1,EE,01feb034,word,1101FFEE
+patch=1,EE,01feb034,word,1101FFEf
 patch=1,EE,01feb038,word,00000000
 patch=1,EE,01feb03c,word,24010005
-patch=1,EE,01feb040,word,1101FFEb
+patch=1,EE,01feb040,word,1101FFEc
 patch=1,EE,01feb044,word,00000000
 patch=1,EE,01feb048,word,24010007
-patch=1,EE,01feb04c,word,1101FFE8
+patch=1,EE,01feb04c,word,1101FFE9
 patch=1,EE,01feb050,word,00000000
 patch=1,EE,01feb054,word,24010004
-patch=1,EE,01feb058,word,1101FFE5
+patch=1,EE,01feb058,word,1101FFE6
 patch=1,EE,01feb05c,word,00000000
-patch=1,EE,01feb060,word,0100282d
-patch=1,EE,01feb064,word,080eed73
+patch=1,EE,01feb060,word,24010006
+patch=1,EE,01feb064,word,1101FFE3
 patch=1,EE,01feb068,word,00000000
+patch=1,EE,01feb06c,word,0100282d
+patch=1,EE,01feb070,word,080eed73
+patch=1,EE,01feb074,word,00000000
 
 
 [Ether Laser]
@@ -180,7 +182,7 @@ patch=1,EE,00315280,word,c0000000
 
 [Mithra Swap]
 author=Trulio
-description=4 Freyas, Lenneth, Hrist, Silmeria, Valkyrie, Brahms, Leone, Arngrim and Lezard together with Mithra. Disable this cheat after saving
+description=4 Freyas, Lenneth, Hrist, Silmeria, Valkyrie, Brahms, Leone, Arngrim, Lezard and Celes together with Mithra. Disable this cheat after saving
 patch=1,EE,D03B5DDC,extended,100000B6
 patch=1,EE,203B5DDC,extended,00000000
 patch=1,EE,D03C20C4,extended,0000202D
@@ -222,9 +224,13 @@ patch=1,EE,01feae04,word,00000000
 patch=1,EE,01feae08,word,24050004
 patch=1,EE,01feae0c,word,0C0ED754
 patch=1,EE,01feae10,word,00000000
-patch=1,EE,01feae14,word,24050005
-patch=1,EE,01feae1c,word,080F0832
-patch=1,EE,01feae20,word,00000000
+patch=1,EE,01feae14,word,24050022
+patch=1,EE,01feae18,word,0C0ED754
+patch=1,EE,01feae1c,word,00000000
+patch=1,EE,01feae20,word,02A0202D
+patch=1,EE,01feae24,word,24050005
+patch=1,EE,01feae28,word,080F0832
+patch=1,EE,01feae2c,word,00000000
 
 
 [Add characters to the initial party]
@@ -441,6 +447,6 @@ patch=1,EE,01FEB760,word,00000000
 // (limit of 21 003B5E58) (creating slots 003D7734 003D77C0 003D7E40) (empty slot 358FF46B) 0030099C 003D8044
 [36 characters limit]
 author=Trulio
-description= Up from 33
+description=Up from 33
 patch=1,EE,D03B5E58,extended,00000021
 patch=1,EE,203B5E58,extended,2A620024
