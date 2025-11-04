@@ -1,6 +1,6 @@
 ### Valkyrie Profile 2: Silmeria [SLUS-21452 CC96CE93]
 
-More than 36 characters
+More than 36 characters (probably not possible)
 
 - There's a hardcoded limit of 36 characters in the team at the same time
 
