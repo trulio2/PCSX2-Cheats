@@ -109,8 +109,6 @@ patch=1,EE,20397CB0,extended,00000000
 [Ether Laser]
 author=Trulio
 description=Changes Ether Laser atk and hit. base is 1400 atk(578 hex) 50 hit(32 hex)
-patch=1,EE,D06600DC,extended,00000217
-patch=1,EE,206600DC,extended,00010217
 patch=1,EE,0031C10C,word,13DC0032
 patch=1,EE,0031C110,word,00000000
 patch=1,EE,0031C114,word,00000032
@@ -120,6 +118,7 @@ author=Trulio
 description=Changes Angel Slayer to allow for 3 attacks
 patch=1,EE,00315280,word,c0000000
 
+// (limit of 21 003B5E58) (creating slots 003D7734 003D77C0 003D7E40) (empty slot 358FF46B) 0030099C 003D8044
 [Mithra]
 author=Trulio
 description=4 Freyas, Lenneth, Hrist, Silmeria, Valkyrie, Brahms, Leone, Arngrim and Lezard together with Mithra
