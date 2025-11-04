@@ -106,17 +106,21 @@ patch=1,EE,10431C1E,extended,00001000
 patch=1,EE,D0397CAC,extended,0000102A
 patch=1,EE,20397CB0,extended,00000000
 
+// Important Code: Will prevent freezes if you have one of these characters on the active team in the beginning
+//
 // The game keeps a value that seems to represent the current state of the party. Depending on this value, a function may be called to update the characters(Ex: when alicia gets her new ult)
-// If this function is skipped, and you have Brahms, Lenneth, Silmeria, Hrist, Valkyrie or Freya on the team, the game will crash
-// This code will guarantee that the function will be called
-// Can be disabled after getting to the Hall of Valhalla
+// If this function is skipped and you have Brahms, Lenneth, Silmeria, Hrist, Valkyrie or Freya on the active team, the game will crash
+// That's why having these characters on your active team in the beginning(before Alicia, Rufus.. gets their new ult) will cause crashes. This code will guarantee that the function is always called
+// Can be disabled after getting to the Hall of Valhalla, no problems after that
 [Anti Freeze]
 author=Trulio
-description=Characters won't have their initial ult. Need more tests
+description=Prevent freezes when using late game characters in the beginning. Characters won't have their initial ult. Need more tests
 patch=1,EE,003C0300,word,20030001
 
-// Seems like the game keep flags for characters that are not supposed to be in the party at the current time, and will run a function to remove them after every cutscenes and other events
-// Characters will be removed if added before they're supposed to, or if they're added again after leaving the party in the story.
+// Important Code: Prevents the game from removing characters that were not supposed to be in the team at that moment in the story
+//
+// Seems like the game keep flags for characters that are not supposed to be in the party at the current time, and will run a function to remove them after every cutscenes and some other events
+// Characters will be removed if added before they're supposed to, and even if they're added again after leaving the party in the story.
 // For some reason the game doesn't try to remove Freya, so you don't need this code if you're adding only her
 // I guess it's because she's not a "normal" playable story character, since she only joins in Seraphic Gate
 [Stop the game from removing characters]
@@ -168,10 +172,9 @@ author=Trulio
 description=Changes Angel Slayer to allow for 3 attacks
 patch=1,EE,00315280,word,c0000000
 
-// (limit of 21 003B5E58) (creating slots 003D7734 003D77C0 003D7E40) (empty slot 358FF46B) 0030099C 003D8044
-[Mithra]
+[Mithra Swap]
 author=Trulio
-description=4 Freyas, Lenneth, Hrist, Silmeria, Valkyrie, Brahms, Leone, Arngrim and Lezard together with Mithra
+description=4 Freyas, Lenneth, Hrist, Silmeria, Valkyrie, Brahms, Leone, Arngrim and Lezard together with Mithra. Disable this cheat after saving
 patch=1,EE,D03B5DDC,extended,100000B6
 patch=1,EE,203B5DDC,extended,00000000
 patch=1,EE,D03C20C4,extended,02A0202D
@@ -219,7 +222,7 @@ patch=1,EE,01feae20,word,00000000
 
 [Add characters to the initial party]
 author=
-description=Adds Valkyrie, Lenneth, Hrist, Silmeria, Freya and Brahms to the initial party. Disable this cheat after saving. (check the tutorial for how to get multiple copies of the same character)
+description=Adds Valkyrie, Lenneth, Hrist, Silmeria, Freya and Brahms to the initial party. Disable this cheat after saving (check the tutorial for how to get multiple copies of the same character)
 patch=1,EE,002fb3e0,word,0c7fab8b
 patch=1,EE,002fb3e4,word,00000000
 patch=1,EE,002fb3e8,word,00000000
@@ -330,8 +333,8 @@ patch=1,EE,01feafb4,word,7bb60060
 patch=1,EE,01feafb8,word,00000000
 patch=1,EE,01feafbc,word,00000000
 
-// Will crash the game if you battle with this code active. Use this to make these characters be level 1 when you're using the code to add them in the beginning of the game, or if adding together with Mithra (002F8D68 important)
-[Characters join at level 1(Disable this code as soon as possible)]
+// Will crash the game if you go to battle with this code active. Use this to make these characters be level 1 when you're using the code to add them in the beginning of the game, or if adding together with Mithra (002F8D68 important)
+[Characters join at level 1(Disable this cheat as soon as possible)]
 author=Trulio
 description=Freya, Brahms, Lenneth, Hrist, Silmeria and Valkryie will be level 1 when they join the party. Since they don't have level 1 stats, i made it the f up
 patch=1,EE,D02F8E54,extended,00628024
@@ -427,3 +430,5 @@ patch=1,EE,01FEB754,word,36F7F751
 patch=1,EE,01FEB758,word,AD170000
 patch=1,EE,01FEB75c,word,1000FFC5
 patch=1,EE,01FEB760,word,00000000
+
+// (limit of 21 003B5E58) (creating slots 003D7734 003D77C0 003D7E40) (empty slot 358FF46B) 0030099C 003D8044
