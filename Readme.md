@@ -9,7 +9,3 @@ Playable enemy
 
 - Make a playable enemy. Find where a character is created and swap the information of the model and animations of the enemy
 - 002F8D68 hints here
-
-Tutorial for multiple copies of the same character
-
-[![Watch the video](https://img.youtube.com/vi/KTa5c93oCUE/hqdefault.jpg)](https://youtu.be/KTa5c93oCUE)
