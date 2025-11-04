@@ -347,7 +347,7 @@ patch=1,EE,01feafb8,word,00000000
 patch=1,EE,01feafbc,word,00000000
 
 
-// Will crash the game if you go to battle with this code active. Use this to make these characters be level 1 when you're using the code to add them in the beginning of the game, or if adding together with Mithra (002F8D68 important)
+// Will crash the game if you go to battle or open the status page with this code active. Use this to make these characters be level 1 when you're using the code to add them in the beginning of the game, or if adding together with Mithra
 [Characters join at level 1(Disable this cheat as soon as possible)]
 author=Trulio
 description=Freya, Brahms, Lenneth, Hrist, Silmeria and Valkryie will be level 1 when they join the party. Since they don't have level 1 stats, i made it the f up
@@ -378,7 +378,7 @@ patch=1,EE,01FEB654,word,00000000
 patch=1,EE,01FEB658,word,20080000
 patch=1,EE,01FEB65c,word,20170000
 patch=1,EE,01FEB660,word,00628024
-patch=1,EE,01FEB664,word,080BE396
+patch=1,EE,01FEB664,word,080BE397
 patch=1,EE,01FEB668,word,00000000
 patch=1,EE,01FEB66c,word,00000000
 patch=1,EE,01FEB670,word,00000000
@@ -444,7 +444,6 @@ patch=1,EE,01FEB75c,word,1000FFC5
 patch=1,EE,01FEB760,word,00000000
 
 
-// (limit of 21 003B5E58) (creating slots 003D7734 003D77C0 003D7E40) (empty slot 358FF46B) 0030099C 003D8044
 [36 characters limit]
 author=Trulio
 description=Up from 33
