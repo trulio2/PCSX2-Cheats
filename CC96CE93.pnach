@@ -351,8 +351,8 @@ patch=1,EE,01feafbc,word,00000000
 [Characters join at level 1(Disable this cheat as soon as possible)]
 author=Trulio
 description=Freya, Brahms, Lenneth, Hrist, Silmeria and Valkryie will be level 1 when they join the party. Since they don't have level 1 stats, i made it the f up
-patch=1,EE,D02F8E54,extended,00008024
-patch=1,EE,202F8E54,extended,087FAD80
+//patch=1,EE,D02F8E54,extended,00008024 // this extended was triggering the gameguard
+patch=1,EE,002F8E54,word,087FAD80
 patch=1,EE,01FEB600,word,3C080054
 patch=1,EE,01FEB604,word,35089090
 patch=1,EE,01FEB608,word,14880015
