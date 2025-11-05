@@ -129,41 +129,47 @@ patch=1,EE,203C0300,extended,20030001
 [Stop the game from removing characters]
 author=Trulio
 description=Stop the game from removing Brahms, Lenneth, Silmeria, Hrist, Valkyrie, Leone, Arngrim, Lezard and Dylan from the party (they won't be removed even if they're supposed to at that point in the story)
+patch=1,EE,D03BB5C4,extended,0000382B
+patch=1,EE,203BB5C4,extended,087FAC00
 patch=1,EE,D03BB5C8,extended,0000282D
-patch=1,EE,203BB5C8,extended,087FAC00
-patch=1,EE,01feaff4,word,00004021
-patch=1,EE,01feaff8,word,1000001c
+patch=1,EE,203BB5C8,extended,0002382B
+patch=1,EE,01feafe8,word,00004021
+patch=1,EE,01feafec,word,0100282D
+patch=1,EE,01feaff0,word,24010001
+patch=1,EE,01feaff4,word,0000302D
+patch=1,EE,01feaff8,word,080EED75
 patch=1,EE,01feaffc,word,00000000
 patch=1,EE,01feb000,word,24010009
-patch=1,EE,01feb004,word,1101fffb
+patch=1,EE,01feb004,word,1101fff8
 patch=1,EE,01feb008,word,00000000
 patch=1,EE,01feb00c,word,24010008
-patch=1,EE,01feb010,word,1101FFF8
+patch=1,EE,01feb010,word,1101FFF5
 patch=1,EE,01feb014,word,00000000
 patch=1,EE,01feb018,word,2401000a
-patch=1,EE,01feb01c,word,1101FFF5
+patch=1,EE,01feb01c,word,1101FFF2
 patch=1,EE,01feb020,word,00000000
 patch=1,EE,01feb024,word,24010001
-patch=1,EE,01feb028,word,1101FFF2
+patch=1,EE,01feb028,word,1101FFEF
 patch=1,EE,01feb02c,word,00000000
 patch=1,EE,01feb030,word,24010002
-patch=1,EE,01feb034,word,1101FFEf
+patch=1,EE,01feb034,word,1101FFEC
 patch=1,EE,01feb038,word,00000000
 patch=1,EE,01feb03c,word,24010005
-patch=1,EE,01feb040,word,1101FFEc
+patch=1,EE,01feb040,word,1101FFE9
 patch=1,EE,01feb044,word,00000000
 patch=1,EE,01feb048,word,24010007
-patch=1,EE,01feb04c,word,1101FFE9
+patch=1,EE,01feb04c,word,1101FFE6
 patch=1,EE,01feb050,word,00000000
 patch=1,EE,01feb054,word,24010004
-patch=1,EE,01feb058,word,1101FFE6
+patch=1,EE,01feb058,word,1101FFE3
 patch=1,EE,01feb05c,word,00000000
 patch=1,EE,01feb060,word,24010006
-patch=1,EE,01feb064,word,1101FFE3
+patch=1,EE,01feb064,word,1101FFE0
 patch=1,EE,01feb068,word,00000000
-patch=1,EE,01feb06c,word,0100282d
-patch=1,EE,01feb070,word,080eed73
-patch=1,EE,01feb074,word,00000000
+patch=1,EE,01feb06c,word,24010001
+patch=1,EE,01feb070,word,0100282d
+patch=1,EE,01feb074,word,080eed73
+patch=1,EE,01feb078,word,00000000
 
 
 [36 characters limit]
@@ -189,11 +195,9 @@ patch=1,EE,00315280,word,c0000000
 
 [Mithra Swap]
 author=Trulio
-description=(Disable after saving)4 Freyas, Lenneth, Hrist, Silmeria, Valkyrie, Brahms, Leone, Arngrim, Lezard and Celes together with Mithra
-patch=1,EE,D03B5DDC,extended,100000B6
-patch=1,EE,203B5DDC,extended,00000000
-patch=1,EE,D03C20C0,extended,0000001E
-patch=1,EE,203C20C0,extended,087FAB60
+description=(Save, close the game and disable this cheat after getting the characters)4 Freyas, Lenneth, Hrist, Silmeria, Valkyrie, Brahms, Leone, Arngrim, Lezard and Celes together with Mithra
+patch=1,EE,003B5DDC,word,00000000
+patch=1,EE,003C20C0,word,087FAB60
 patch=1,EE,01fead80,word,24520000
 patch=1,EE,01fead84,word,2405000d
 patch=1,EE,01fead88,word,0C0ED754
@@ -255,11 +259,10 @@ patch=1,EE,01feae64,word,080F0832
 patch=1,EE,01feae68,word,00000000
 
 
-//Use this to make these characters be level 1 when you're using the code to add them in the beginning of the game, or if adding together with Mithra
+//Use this cheat to make these characters be level 1 when you're adding them together with Mithra
 [Characters join at level 1]
 author=Trulio
-description=(Disable after saving)Freya, Brahms, Lenneth, Hrist, Silmeria and Valkryie will be level 1 when they join the party. Since they don't have level 1 stats, i made it the f up
-//patch=1,EE,D02F8E54,extended,00008024 // this extended was triggering the gameguard
+description=(Save, close the game and disable this cheat after getting the characters)Freya, Brahms, Lenneth, Hrist, Silmeria and Valkryie will be level 1 when they join the party. Since they don't have level 1 stats, i made it the f up
 patch=1,EE,002F8E54,word,087FAD80
 patch=1,EE,01FEB600,word,3C080054
 patch=1,EE,01FEB604,word,35089090
