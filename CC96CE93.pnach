@@ -115,9 +115,9 @@ patch=1,EE,20397CB0,extended,00000000
 // Can be disabled after getting to the Hall of Valhalla, no problems after that
 [Anti Freeze]
 author=Trulio
-description=Prevent freezes when using late game characters in the beginning. Characters won't have their initial ult
-patch=1,EE,D03C0300,extended,0000182B
-patch=1,EE,203C0300,extended,20030001
+description=Prevent freezes when using late game characters in the beginning
+patch=1,EE,D0398E10,extended,00001FFE
+patch=1,EE,20398E10,extended,20030001
 
 
 // Important Code: Prevents the game from removing characters that were not supposed to be in the team at that moment in the story
