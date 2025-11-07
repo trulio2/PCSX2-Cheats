@@ -9,7 +9,3 @@ Playable enemy
 
 - Make a playable enemy. Find where a character is created and swap the information of the model and animations of the enemy
 - 002F8D68 hints here
-
-Givew characters all skills, spells and attacks
-
-- Seems to be fixed, needs full run test

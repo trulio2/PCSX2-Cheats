@@ -193,9 +193,9 @@ description=Changes Angel Slayer to allow for 3 attacks
 patch=1,EE,00315280,word,c0000000
 
 
-[Characters join with all skills, spells and attacks]
+[Characters join with all skills, spells and attacks unlocked]
 author=Trulio
-description=Characters will join the party with every skill, spells and attacks unlocked
+description=Characters will join the party with every skill, spells and attacks unlocked. Will work on randoms found on maps
 patch=1,EE,002F3F9C,word,00000000
 patch=1,EE,002F60C0,word,087FA880
 patch=1,EE,002F60C4,word,00000000
