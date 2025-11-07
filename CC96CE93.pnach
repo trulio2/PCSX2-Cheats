@@ -195,7 +195,7 @@ patch=1,EE,00315280,word,c0000000
 
 [Characters join with most skills and attacks]
 author=Trulio
-description=(Save, close the game and disable this cheat after getting the characters)Characters will join the party with almost every attacks and skill learned (disable it asf or the game will break)
+description=(Save, close the game and disable this cheat after getting the characters)Characters will join the party with almost every attacks and skill learned (disable it asap or the game will break)
 patch=1,EE,002F3F9C,word,00000000
 patch=1,EE,002F60C0,word,087FA880
 patch=1,EE,002F60C4,word,00000000

@@ -12,4 +12,4 @@ Playable enemy
 
 Givew characters all skills, spells and attacks
 
-- Find a way to keep this code active
+- Find a way to keep this code active, will break the game if someone levels up during battle
