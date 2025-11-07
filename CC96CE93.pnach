@@ -1,7 +1,7 @@
 gametitle=Valkyrie Profile 2: Silmeria [SLUS-21452 CC96CE93]
 
 [Main code to allow cheats]
-author=
+author=Maori-Jigglypuff
 description=must be always on (0049BCB0)
 patch=1,EE,00205ad8,word,087fac70
 patch=1,EE,00205adc,word,00000000
@@ -395,3 +395,40 @@ patch=1,EE,01feaddc,word,24060001
 patch=1,EE,01feadec,word,24060001
 patch=1,EE,01feadfc,word,24060001
 patch=1,EE,01feae0c,word,24060001
+
+
+// When you have restored a sealstone they wont show up in the map, so this could make some puzzles harder to solve.
+// This is a bad solution, since you have to leave the current map and it'll bug the one you currently activated
+[Restore a Sealstone to unlock all (need tests)]
+author=Trulio
+description=Unlock all Sealstones when restoring one. Need to go back to the world map for the sealstones to show up (will show up in the menu before tho)
+patch=1,EE,D049A6AC,extended,0000143F
+patch=1,EE,2049A6AC,extended,34020001
+patch=1,EE,D049A930,extended,00000004
+patch=1,EE,2049A930,extended,087FB740
+patch=1,EE,D049A934,extended,000005E8
+patch=1,EE,2049A934,extended,00000000
+patch=1,EE,01FEDD00,word,341B0000
+patch=1,EE,01FEDD04,word,34150044
+patch=1,EE,01FEDD08,word,00000000
+patch=1,EE,01FEDD0c,word,00000000
+patch=1,EE,01FEDD10,word,34090018
+patch=1,EE,01FEDD14,word,113B0006
+patch=1,EE,01FEDD18,word,00000000
+patch=1,EE,01FEDD1c,word,34090040
+patch=1,EE,01FEDD20,word,113B0003
+patch=1,EE,01FEDD24,word,00000000
+patch=1,EE,01FEDD28,word,A2020004
+patch=1,EE,01FEDD2c,word,00000000
+patch=1,EE,01FEDD30,word,26100006
+patch=1,EE,01FEDD34,word,277B0001
+patch=1,EE,01FEDD38,word,0375482A
+patch=1,EE,01FEDD3c,word,1520FFF4
+patch=1,EE,01FEDD40,word,00000000
+patch=1,EE,01FEDD44,word,341B0000
+patch=1,EE,01FEDD48,word,34150000
+patch=1,EE,01FEDD4c,word,34090000
+patch=1,EE,01FEDD50,word,826205E8
+patch=1,EE,01FEDD54,word,08126A4E
+patch=1,EE,01FEDD58,word,00000000
+
