@@ -193,24 +193,36 @@ description=Changes Angel Slayer to allow for 3 attacks
 patch=1,EE,00315280,word,c0000000
 
 
-[Characters join with most skills and attacks]
+[Characters join with all skills, spells and attacks]
 author=Trulio
-description=(Save, close the game and disable this cheat after getting the characters)Characters will join the party with almost every attacks and skill learned (disable it asap or the game will break)
+description=Characters will join the party with every skill, spells and attacks unlocked
 patch=1,EE,002F3F9C,word,00000000
 patch=1,EE,002F60C0,word,087FA880
 patch=1,EE,002F60C4,word,00000000
+patch=1,EE,01FEA1E8,word,000318C0
+patch=1,EE,01FEA1EC,word,10000010
+patch=1,EE,01FEA1F0,word,00000000
 patch=1,EE,01FEA1F4,word,24030001
-patch=1,EE,01FEA1F8,word,10000007
-patch=1,EE,01FEA1Fc,word,00000000
-patch=1,EE,01FEA200,word,34170018
-patch=1,EE,01FEA204,word,12EEFFFB
-patch=1,EE,01FEA208,word,00000000
-patch=1,EE,01FEA20c,word,240300ff
-patch=1,EE,01FEA210,word,00000000
+patch=1,EE,01FEA1F8,word,1000000D
+patch=1,EE,01FEA1FC,word,00000000
+patch=1,EE,01FEA200,word,341B0000
+patch=1,EE,01FEA204,word,3C01003C
+patch=1,EE,01FEA208,word,342120D4
+patch=1,EE,01FEA20C,word,94210000
+patch=1,EE,01FEA210,word,1761FFF5
 patch=1,EE,01FEA214,word,00000000
-patch=1,EE,01FEA218,word,00431021
-patch=1,EE,01FEA21c,word,080BD832
+patch=1,EE,01FEA218,word,341B0018
+patch=1,EE,01FEA21C,word,136EFFF5
 patch=1,EE,01FEA220,word,00000000
+patch=1,EE,01FEA224,word,240300FF
+patch=1,EE,01FEA228,word,00000000
+patch=1,EE,01FEA22C,word,00000000
+patch=1,EE,01FEA230,word,3C010036
+patch=1,EE,01FEA234,word,34210000
+patch=1,EE,01FEA238,word,341B0000
+patch=1,EE,01FEA23C,word,00431021
+patch=1,EE,01FEA240,word,080BD832
+patch=1,EE,01FEA244,word,00000000
 
 
 [Mithra Swap]
