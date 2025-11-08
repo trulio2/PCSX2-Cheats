@@ -4,6 +4,7 @@ gametitle=Valkyrie Profile 2: Silmeria [SLUS-21452 CC96CE93]
 [This Game Has Major Protection Against Cheating]
 author=Code Master
 description=Must Be On (0049BCB0)
+patch=1,EE,0010D1B8,word,24020000
 patch=1,EE,F0129B51,extended,800813BF
 patch=1,EE,000FFFFE,extended,0000002D
 patch=1,EE,000FFFFF,extended,0000002D
@@ -28,7 +29,6 @@ patch=1,EE,10431A66,extended,00001000
 patch=1,EE,10431C1E,extended,00001000
 patch=1,EE,D0397CAC,extended,0000102A
 patch=1,EE,20397CB0,extended,00000000
-patch=1,EE,0010d1b8,word,24020000
 
 
 // Important Code: Will prevent freezes if you have one of these characters on the active team in the beginning
