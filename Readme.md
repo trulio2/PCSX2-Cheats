@@ -8,4 +8,4 @@ More than 36 characters (probably not possible)
 Playable enemy
 
 - Make a playable enemy. Find where a character is created and swap the information of the model and animations of the enemy
-- 002F8D68 hints here
+- 002F8D68 hints here (358FF40F 358FF46B)
