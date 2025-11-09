@@ -7,10 +7,7 @@ gametitle=Valkyrie Profile 2: Silmeria [SLUS-21452 CC96CE93]
 [Disable gameguard]
 author=Trulio
 description=Disable checksum validation and loop
-patch=1,EE,D03AD608,extended,0000FFD5
-patch=1,EE,203AD608,extended,00000000
-patch=1,EE,D03AD618,extended,00001827
-patch=1,EE,203AD61C,extended,1000000A
+// ---- Main Checksum (after cutscene, battle, map change)
 patch=1,EE,D0423464,extended,0000FFF4
 patch=1,EE,20423464,extended,00000000
 patch=1,EE,D042349C,extended,00001026
@@ -23,8 +20,7 @@ patch=1,EE,D04237E4,extended,0000FFF4
 patch=1,EE,204237E4,extended,00000000
 patch=1,EE,D0423828,extended,00000005
 patch=1,EE,20423828,extended,10000005
-patch=1,EE,D0431C1C,extended,00000010
-patch=1,EE,20431C1C,extended,10000010
+// ---- Saving Checksum
 patch=1,EE,D049A2CC,extended,00006F2C
 patch=1,EE,2049A2CC,extended,00000000
 patch=1,EE,D049BF2C,extended,0000FFF4
@@ -35,6 +31,19 @@ patch=1,EE,D049C094,extended,0000FFF4
 patch=1,EE,2049C094,extended,00000000
 patch=1,EE,D049C0C4,extended,00001826
 patch=1,EE,2049C0C8,extended,34030001
+// ---- Battle Checksum
+patch=1,EE,D03AD608,extended,0000FFD5
+patch=1,EE,203AD608,extended,00000000
+patch=1,EE,D03AD618,extended,00001827
+patch=1,EE,203AD61C,extended,1000000A
+patch=1,EE,D03AF1EC,extended,0000000A
+patch=1,EE,203AF1EC,extended,1000000A
+patch=1,EE,D03AF224,extended,0000FFE6
+patch=1,EE,203AF224,extended,00000000
+patch=1,EE,D0431C0C,extended,0000FFD2
+patch=1,EE,20431C0C,extended,00000000
+patch=1,EE,D0431C1C,extended,00000010
+patch=1,EE,20431C1C,extended,10000010
 
 
 // Important Code: Will prevent freezes if you have one of these characters on the active team in the beginning
