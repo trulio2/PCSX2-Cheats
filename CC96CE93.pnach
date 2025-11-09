@@ -1,31 +1,40 @@
 gametitle=Valkyrie Profile 2: Silmeria [SLUS-21452 CC96CE93]
 
 
-[This Game Has Major Protection Against Cheating]
-author=Code Master
-description=Must Be On (0049BCB0)
-patch=1,EE,0010D1B8,word,24020000
-patch=1,EE,F0129B51,extended,800813BF
-patch=1,EE,000FFFFE,extended,0000002D
-patch=1,EE,000FFFFF,extended,0000002D
-patch=1,EE,9013A550,extended,0C04E8FC
-patch=1,EE,E0033B40,extended,0035EC8C
-patch=1,EE,104234AA,extended,00001000
-patch=1,EE,10423662,extended,00001000
-patch=1,EE,1042382A,extended,00001000
-patch=1,EE,E0027EC0,extended,0049550C
-patch=1,EE,2049BCB0,extended,03E00008
-patch=1,EE,2049BCB4,extended,00000000
-patch=1,EE,E007E140,extended,0036D90C
-patch=1,EE,203683D4,extended,00000000
-patch=1,EE,103AD16A,extended,00001000
-patch=1,EE,103AD61E,extended,00001000
-patch=1,EE,10430B76,extended,00001000
-patch=1,EE,10430BE2,extended,00001000
-patch=1,EE,10431A66,extended,00001000
-patch=1,EE,10431C1E,extended,00001000
-patch=1,EE,D0397CAC,extended,0000102A
-patch=1,EE,20397CB0,extended,00000000
+//The game does an insane byte by byte checksum to check for modifications after every cutscene, battle and when saving
+//It doesn't check the entire memory, but it seems like it checks every major function. Ether Laser and Angel Slayer addresses are not checked (items? static/constant address?)
+//This code will ignore the validation and stop the loop
+[Disable gameguard]
+author=Trulio
+description=Disable checksum validation and loop
+patch=1,EE,D03AD608,extended,0000FFD5
+patch=1,EE,203AD608,extended,00000000
+patch=1,EE,D03AD618,extended,00001827
+patch=1,EE,203AD61C,extended,1000000A
+patch=1,EE,D0423464,extended,0000FFF4
+patch=1,EE,20423464,extended,00000000
+patch=1,EE,D042349C,extended,00001026
+patch=1,EE,204234A0,extended,34020001
+patch=1,EE,D042361C,extended,0000FFF4
+patch=1,EE,2042361C,extended,00000000
+patch=1,EE,D0423654,extended,00001026
+patch=1,EE,20423658,extended,34020001
+patch=1,EE,D04237E4,extended,0000FFF4
+patch=1,EE,204237E4,extended,00000000
+patch=1,EE,D0423828,extended,00000005
+patch=1,EE,20423828,extended,10000005
+patch=1,EE,D0431C1C,extended,00000010
+patch=1,EE,20431C1C,extended,10000010
+patch=1,EE,D049A2CC,extended,00006F2C
+patch=1,EE,2049A2CC,extended,00000000
+patch=1,EE,D049BF2C,extended,0000FFF4
+patch=1,EE,2049BF2C,extended,00000000
+patch=1,EE,D049BF5C,extended,00001026
+patch=1,EE,2049BF60,extended,34020001
+patch=1,EE,D049C094,extended,0000FFF4
+patch=1,EE,2049C094,extended,00000000
+patch=1,EE,D049C0C4,extended,00001826
+patch=1,EE,2049C0C8,extended,34030001
 
 
 // Important Code: Will prevent freezes if you have one of these characters on the active team in the beginning
