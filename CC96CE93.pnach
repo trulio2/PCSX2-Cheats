@@ -2,7 +2,7 @@ gametitle=Valkyrie Profile 2: Silmeria [SLUS-21452 CC96CE93]
 
 
 //The game does an insane byte by byte checksum to check for modifications after every cutscene, battle and when saving
-//It doesn't check the entire memory, but it seems like it checks every major function. Ether Laser and Angel Slayer addresses are not checked (items? static/constant address?)
+//It doesn't check the entire memory, but it seems like it checks every major function. Ether Laser and Angel Slayer addresses are not checked (probably doesn't check variable addresses, only static functions)
 //This code will ignore the validation and stop the loop
 [Disable gameguard]
 author=Trulio
