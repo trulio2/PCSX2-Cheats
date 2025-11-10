@@ -1,10 +1,14 @@
 gametitle=Valkyrie Profile 2: Silmeria [SLUS-21452 CC96CE93]
 
 
-//The game does an insane byte by byte checksum to check for modifications after every cutscene, battle and when saving
-//It doesn't check the entire memory, but it seems like it checks every major function. Ether Laser and Angel Slayer addresses are not checked (probably doesn't check variable addresses, only static functions)
-//This code will ignore the validation and stop the loop
-[Disable gameguard]
+// Important Code: Stop the game from running through millions of bytes to create a checksum, and ignore it's validation.
+//
+// The game does an insane byte by byte checksum to check for modifications after every cutscene, map change, battle and when saving
+// And if the result of the checksum is wrong (the result will be wrong even if a single byte inside any function was modified) the game will send itself to an infinite loop (freeze). It's literally a while(true){ do nothing } lol
+// It doesn't check the entire memory, but it seems like it checks every major function. Ether Laser and Angel Slayer addresses are not checked (probably doesn't check variable addresses, only static functions)
+// I think this solution is better than the others i found online because they just ignored the validation, but here i'm also stopping the validation of millions of bytes to create the checksum after cutscenes, map changing, saving and battles, so it also makes these transitions faster
+// This code will ignore the validation and stop the loop
+[Disable Gameguard]
 author=Trulio
 description=Disable checksum validation and loop
 // ---- Main Checksum (after cutscene, battle, map change)
@@ -54,7 +58,7 @@ patch=1,EE,20431C1C,extended,10000010
 // Can be disabled after getting to the Hall of Valhalla, no problems after that
 [Anti Freeze In Battles]
 author=Trulio
-description=Prevent freezes when using late game characters in the beginning
+description=(Can be disabled after getting to the Hall of Valhalla)Prevent freezes when using late game characters in the beginning
 patch=1,EE,D0398E10,extended,00001FFE
 patch=1,EE,20398E10,extended,20030001
 
@@ -232,7 +236,7 @@ patch=1,EE,01FEAE64,word,080F0832
 patch=1,EE,01FEAE68,word,00000000
 
 
-//Use this cheat to make these characters be level 1 when you're adding them together with Mithra
+// Use this cheat to make these characters be level 1 when you're adding them together with Mithra
 [Characters Join At Level 1]
 author=Trulio
 description=(Save, close the game and disable this cheat after getting the characters)Freya, Brahms, Lenneth, Hrist, Silmeria and Valkryie will be level 1 when they join the party. Since they don't have level 1 stats, i made it the f up
@@ -338,9 +342,9 @@ patch=1,EE,01FEADFC,word,24060001
 patch=1,EE,01FEAE0C,word,24060001
 
 
-//When you have restored a sealstone they wont show up in the map, so this could make some puzzles harder to solve.
-//This is a bad solution, since you have to leave the current map and it'll bug the one you currently activated
-//Removed Lightning/Earth Blessings and Wrath of Bread Alone to help with Crawsus Forest and Palace of the Dragon puzzles
+// When you have restored a sealstone they wont show up in the map, so this could make some puzzles harder to solve.
+// This is a bad solution, since you have to leave the current map and it'll bug the one you currently activated
+// Removed Lightning/Earth Blessings and Wrath of Bread Alone to help with Crawsus Forest and Palace of the Dragon puzzles
 [Restore A Sealstone To Unlock All]
 author=Trulio
 description=Unlock all Sealstones when restoring one. Need to go back to the world map for the sealstones to show up (will show up in the menu before tho. Disable it after saving)
