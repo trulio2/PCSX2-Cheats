@@ -37,8 +37,14 @@ patch=1,EE,2049C094,extended,00000000
 patch=1,EE,D049C0C4,extended,00001826
 patch=1,EE,2049C0C8,extended,34030001
 // ---- Battle Checksum
+patch=1,EE,D03ABF98,extended,0000FFF9
+patch=1,EE,203ABF98,extended,00000000
 patch=1,EE,D03ABFB4,extended,0000FFFA
 patch=1,EE,203ABFB4,extended,00000000
+patch=1,EE,D03AD158,extended,0000FFD5
+patch=1,EE,203AD158,extended,00000000
+patch=1,EE,D03AD164,extended,00001827
+patch=1,EE,203AD168,extended,100000C3
 patch=1,EE,D03AD608,extended,0000FFD5
 patch=1,EE,203AD608,extended,00000000
 patch=1,EE,D03AD618,extended,00001827
