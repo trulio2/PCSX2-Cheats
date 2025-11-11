@@ -24,7 +24,8 @@ patch=1,EE,D04237E4,extended,0000FFF4
 patch=1,EE,204237E4,extended,00000000
 patch=1,EE,D0423828,extended,00000005
 patch=1,EE,20423828,extended,10000005
-patch=1,EE,0010D1B8,word,24020000
+patch=1,EE,D010D1B8,extended,00000009
+patch=1,EE,2010D1B8,extended,24020000
 // ---- Saving Checksum
 patch=1,EE,D049A2CC,extended,00006F2C
 patch=1,EE,2049A2CC,extended,00000000
@@ -367,7 +368,7 @@ patch=1,EE,01FEADFC,word,24060001
 patch=1,EE,01FEAE0C,word,24060001
 
 
-// When you have restored a sealstone they wont show up in the map, so this could make some puzzles harder to solve.
+// When you have restored a sealstone they wont show up in the map, so this could make some puzzles harder to solve
 // This is a bad solution, since you have to leave the current map and it'll bug the one you currently activated
 // Removed Lightning/Earth Blessings and Wrath of Bread Alone to help with Crawsus Forest and Palace of the Dragon puzzles
 [Restore A Sealstone To Unlock All]
@@ -411,4 +412,3 @@ patch=1,EE,01FEDD70,word,34090000
 patch=1,EE,01FEDD74,word,826205E8
 patch=1,EE,01FEDD78,word,08126A4E
 patch=1,EE,01FEDD7C,word,00000000
-
