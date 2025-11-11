@@ -24,6 +24,7 @@ patch=1,EE,D04237E4,extended,0000FFF4
 patch=1,EE,204237E4,extended,00000000
 patch=1,EE,D0423828,extended,00000005
 patch=1,EE,20423828,extended,10000005
+patch=1,EE,0010D1B8,word,24020000
 // ---- Saving Checksum
 patch=1,EE,D049A2CC,extended,00006F2C
 patch=1,EE,2049A2CC,extended,00000000
