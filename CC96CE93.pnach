@@ -1,7 +1,7 @@
 gametitle=Valkyrie Profile 2: Silmeria [SLUS-21452 CC96CE93]
 
 
-// Important Code: Stop the game from running through millions of bytes to create a checksum, and ignore it's validation.
+// Important Code: Stop the game from running through millions of bytes to create a checksum, and ignore it's validation
 //
 // The game does an insane byte by byte checksum to check for modifications after every cutscene, map change, battle and when saving
 // And if the result of the checksum is wrong (the result will be wrong even if a single byte inside any function was modified) the game will send itself to an infinite loop (freeze). It's literally a while(true){ do nothing } lol
@@ -133,7 +133,7 @@ patch=1,EE,0031C114,word,00000032
 [Angel Slayer]
 author=Trulio
 description=Changes Angel Slayer to allow for 3 attacks
-patch=1,EE,00315280,word,c0000000
+patch=1,EE,00315280,word,C0000000
 
 
 [Characters Join With All Skills, Spells And Attacks Unlocked]
