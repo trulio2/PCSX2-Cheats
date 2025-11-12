@@ -206,7 +206,7 @@ patch=1,EE,01FEA244,word,00000000
 
 [Mithra Swap]
 author=Trulio
-description=(Save, close the game and disable this cheat after getting the characters)4 Freyas, Lenneth, Hrist, Silmeria, Valkyrie, Brahms, Leone, Arngrim, Lezard and Celes together with Mithra
+description=(Save, close the game and disable this cheat after getting the characters)4 Freyas, Lenneth, Hrist, Silmeria, Valkyrie, Brahms, Leone, Arngrim, Lezard, Zunde and Celes together with Mithra
 patch=1,EE,D03B5DD8,extended,00000000
 patch=1,EE,203B5DDC,extended,00000000
 patch=1,EE,D03C20C0,extended,0000001E
@@ -260,16 +260,20 @@ patch=1,EE,01FEAE34,word,24050005
 patch=1,EE,01FEAE38,word,0C0ED754
 patch=1,EE,01FEAE3C,word,24060007
 patch=1,EE,01FEAE40,word,00000000
-patch=1,EE,01FEAE44,word,24050022
+patch=1,EE,01FEAE44,word,24050031
 patch=1,EE,01FEAE48,word,0C0ED754
-patch=1,EE,01FEAE4C,word,26460000
+patch=1,EE,01FEAE4C,word,24060005
 patch=1,EE,01FEAE50,word,00000000
-patch=1,EE,01FEAE54,word,26420000
-patch=1,EE,01FEAE58,word,24120000
-patch=1,EE,01FEAE5C,word,02A0202D
-patch=1,EE,01FEAE60,word,2405003C
-patch=1,EE,01FEAE64,word,080F0832
-patch=1,EE,01FEAE68,word,00000000
+patch=1,EE,01FEAE54,word,24050022
+patch=1,EE,01FEAE58,word,0C0ED754
+patch=1,EE,01FEAE5C,word,26460000
+patch=1,EE,01FEAE60,word,00000000
+patch=1,EE,01FEAE64,word,26420000
+patch=1,EE,01FEAE68,word,24120000
+patch=1,EE,01FEAE6C,word,02A0202D
+patch=1,EE,01FEAE70,word,2405003C
+patch=1,EE,01FEAE74,word,080F0832
+patch=1,EE,01FEAE78,word,00000000
 
 
 // Use this cheat to make these characters be level 1 when you're adding them together with Mithra
