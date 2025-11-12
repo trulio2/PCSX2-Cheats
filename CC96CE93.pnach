@@ -1,5 +1,5 @@
-gametitle=Valkyrie Profile 2: Silmeria [SLUS-21452 CC96CE93]
-
+// Valkyrie Profile 2 (CC96CE93)
+// Git: https://github.com/trulio2/PCSX2-Cheats/blob/master/CC96CE93.pnach
 
 // Important Code: Stop the game from running through millions of bytes to create a checksum, and ignore it's validation
 //
