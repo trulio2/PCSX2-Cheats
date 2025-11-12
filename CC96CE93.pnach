@@ -382,7 +382,7 @@ patch=1,EE,01FEADFC,word,24060001
 patch=1,EE,01FEAE0C,word,24060001
 
 
-// When you have restored a sealstone they wont show up in the map, so this could make some puzzles harder to solve
+// Restored Sealstones doesn't show up in their original places on the map, so this could make some puzzles harder to solve
 // This is a bad solution, since you have to leave the current map and it'll bug the one you currently activated
 // Removed Lightning/Earth Blessings and Wrath of Bread Alone to help with Crawsus Forest and Palace of the Dragon puzzles
 [Restore A Sealstone To Unlock All]

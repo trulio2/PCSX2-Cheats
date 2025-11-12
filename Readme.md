@@ -1,5 +1,9 @@
 ### Valkyrie Profile 2: Silmeria [SLUS-21452 CC96CE93]
 
+In-Battle checksum verification
+
+- Seems to be fine for now, but there are literally hundreds of validations happening in many different places during battle. Will need more tests to be certain that it's all fixed
+
 More than 36 characters (probably not possible)
 
 - There's a hardcoded limit of 36 characters in the team at the same time
