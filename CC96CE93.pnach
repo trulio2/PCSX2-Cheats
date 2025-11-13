@@ -212,11 +212,16 @@ patch=1,EE,01FEA240,word,080BD832
 patch=1,EE,01FEA244,word,00000000
 
 
+[Allow For Dupes Of The Same Character]
+author=Trulio
+description=Remove the validation that prevents adding the same character again
+patch=1,EE,D03B5DD8,extended,00000000
+patch=1,EE,203B5DDC,extended,00000000
+
+
 [Mithra Swap]
 author=Trulio
 description=(Save, close the game and disable this cheat after getting the characters)4 Freyas, Lenneth, Hrist, Silmeria, Valkyrie, Brahms, Leone, Arngrim, Lezard, Zunde and Celes together with Mithra
-patch=1,EE,D03B5DD8,extended,00000000
-patch=1,EE,203B5DDC,extended,00000000
 patch=1,EE,D03C20C0,extended,0000001E
 patch=1,EE,203C20C0,extended,087FAB60
 patch=1,EE,01FEAD80,word,24520000
