@@ -85,12 +85,12 @@ patch=1,EE,20431C0C,extended,00000000
 patch=1,EE,D0431C1C,extended,00000010
 patch=1,EE,20431C1C,extended,10000010
 // ---- Major In-Battle Checksum - Test (comment these lines if there's any bugs during battle)
-patch=1,EE,D036806C,extended,0000082A
-patch=1,EE,2036806C,extended,34010000
-patch=1,EE,D03683D4,extended,00000038
-patch=1,EE,203683D4,extended,00000000
-patch=1,EE,D03683DC,extended,00000004
-patch=1,EE,203683DC,extended,10000004
+//patch=1,EE,D036806C,extended,0000082A
+//patch=1,EE,2036806C,extended,34010000
+//patch=1,EE,D03683D4,extended,00000038
+//patch=1,EE,203683D4,extended,00000000
+//patch=1,EE,D03683DC,extended,00000004
+//patch=1,EE,203683DC,extended,10000004
 
 
 
