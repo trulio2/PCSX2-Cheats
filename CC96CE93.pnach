@@ -441,10 +441,12 @@ description=No limit for switching sealstones. The number may go negative tho (t
 patch=1,EE,D04A0BCC,extended,00000004
 patch=1,EE,204A0BCC,extended,10000004
 
+
+// 36 is enough
 [99 Skill Points]
 author=Trulio
 description=99 Skill points for all characters
 patch=1,EE,D0496318,extended,00000003
 patch=1,EE,20496318,extended,00000000
 patch=1,EE,D0496320,extended,0000000C
-patch=1,EE,20496320,extended,24030063
+patch=1,EE,20496320,extended,24030024
