@@ -167,9 +167,9 @@ patch=1,EE,203B5E58,extended,2A620024
 
 [Ether Laser]
 author=Trulio
-description=Changes Ether Laser atk and hit. base is 1400 atk(578 hex) 50 hit(32 hex)
+description=Changes Ether Laser atk and hit. Base is 1400 atk(578 hex) and 50 hit(32 hex)
 patch=1,EE,0031C10C,word,13DC0032
-patch=1,EE,0031C110,word,00000000
+patch=1,EE,0031C110,word,00000032
 patch=1,EE,0031C114,word,00000032
 
 
@@ -181,7 +181,7 @@ patch=1,EE,00315280,word,C0000000
 
 [Characters Join With All Skills, Spells And Attacks Unlocked]
 author=Trulio
-description=Characters will join the party with every skill, spells and attacks unlocked. Will work on randoms found on maps
+description=Characters will join the party with every skill, spells and attacks unlocked. Will work on randoms found on maps later
 patch=1,EE,002F3F9C,word,00000000
 patch=1,EE,002F60C0,word,087FA880
 patch=1,EE,002F60C4,word,00000000
@@ -440,3 +440,11 @@ author=Trulio
 description=No limit for switching sealstones. The number may go negative tho (this also allows to return sealstones that aren't restored yet, and it'll restore them, for free)
 patch=1,EE,D04A0BCC,extended,00000004
 patch=1,EE,204A0BCC,extended,10000004
+
+[99 Skill Points]
+author=Trulio
+description=99 Skill points for all characters
+patch=1,EE,D0496318,extended,00000003
+patch=1,EE,20496318,extended,00000000
+patch=1,EE,D0496320,extended,0000000C
+patch=1,EE,20496320,extended,24030063
