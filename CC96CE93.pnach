@@ -1,4 +1,4 @@
-// Valkyrie Profile 2 (CC96CE93)
+// Valkyrie Profile 2 US (SLUS-21452 - CC96CE93)
 // Git: https://github.com/trulio2/PCSX2-Cheats/blob/master/CC96CE93.pnach
 
 
@@ -126,7 +126,7 @@ patch=1,EE,01FEAFF4,word,0000302D
 patch=1,EE,01FEAFF8,word,080EED75
 patch=1,EE,01FEAFFC,word,00000000
 patch=1,EE,01FEB000,word,24010009
-patch=1,EE,01FEB004,word,1101fff8
+patch=1,EE,01FEB004,word,1101FFF8
 patch=1,EE,01FEB008,word,00000000
 patch=1,EE,01FEB00C,word,24010008
 patch=1,EE,01FEB010,word,1101FFF5
