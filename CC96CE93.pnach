@@ -84,20 +84,15 @@ patch=1,EE,D0431C0C,extended,0000FFD2
 patch=1,EE,20431C0C,extended,00000000
 patch=1,EE,D0431C1C,extended,00000010
 patch=1,EE,20431C1C,extended,10000010
-// ---- Major In-Battle Checksum - Test (comment these lines if there's any bugs during battle) (froze in the Ancient Forest)
-//patch=1,EE,D036806C,extended,0000082A
-//patch=1,EE,2036806C,extended,34010000
-//patch=1,EE,D03683D4,extended,00000038
-//patch=1,EE,203683D4,extended,00000000
-//patch=1,EE,D03683DC,extended,00000004
-//patch=1,EE,203683DC,extended,10000004
 
 
 // Important Code: Will prevent freezes if you have one of these characters on the active team in the beginning
 //
-// The game keeps a value that seems to represent the current state of the party. Depending on this value, a function may be called to update the characters(Ex: when alicia gets her new ult)
-// If this function is skipped and you have Brahms, Lenneth, Silmeria, Hrist, Valkyrie or Freya on the active team, the game will crash
-// That's why having these characters on your active team in the beginning(before Alicia, Rufus.. gets their new ult) will cause crashes. This code will guarantee that the function is always called
+// Actually, the game stores the ids of these 6 characters (Brahms, Freya, Valkryie, Silmeria, Lenneth and Hrist (in this order, hardcoded lol)), and will compare these ids
+// to the id of each member in the active party before every battle, and if it finds a match, the game will go to a function to crash itself (this validation is skipped in the late game by default)
+// There are multiple ways to solve this: Removing these stored ids (this is easy to do bc they're stored in a static address). Ignoring when the game tries to crash itself. Making the game think that it's in the late game
+// But the best solution imo is to just skip the entire function that does this validation. This cheat will force the game to also skip this validation in the early game
+//
 // Can be disabled after getting to the Hall of Valhalla, no problems after that (the exact moment is right after beating the White Dragon when Alicia finds the ring that fell during the battle with Odin, their ult will also update here)
 [Anti Freeze In Battles]
 author=Trulio
@@ -154,7 +149,7 @@ patch=1,EE,01FEB064,word,1101FFE0
 patch=1,EE,01FEB068,word,00000000
 patch=1,EE,01FEB06C,word,24010001
 patch=1,EE,01FEB070,word,0100282D
-patch=1,EE,01FEB074,word,080eed73
+patch=1,EE,01FEB074,word,080EED73
 patch=1,EE,01FEB078,word,00000000
 
 
