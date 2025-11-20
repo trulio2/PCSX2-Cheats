@@ -1,6 +1,7 @@
 // Valkyrie Profile 2 (CC96CE93)
 // Git: https://github.com/trulio2/PCSX2-Cheats/blob/master/CC96CE93.pnach
 
+
 // Important Code: Stop the game from running through millions of bytes to create a checksum, and ignore it's validation
 //
 // The game does an insane byte by byte checksum to check for modifications after every cutscene, map change, battle and when saving
@@ -54,6 +55,8 @@ patch=1,EE,D03AD608,extended,0000FFD5
 patch=1,EE,203AD608,extended,00000000
 patch=1,EE,D03AD618,extended,00001827
 patch=1,EE,203AD61C,extended,1000000A
+patch=1,EE,D03AF1B0,extended,000000BB
+patch=1,EE,203AF1B0,extended,100000BB
 patch=1,EE,D03AF1EC,extended,0000000A
 patch=1,EE,203AF1EC,extended,1000000A
 patch=1,EE,D03AF224,extended,0000FFE6
@@ -62,6 +65,8 @@ patch=1,EE,D03AF388,extended,00000009
 patch=1,EE,203AF388,extended,10000009
 patch=1,EE,D03AF448,extended,00000009
 patch=1,EE,203AF448,extended,10000009
+patch=1,EE,D03AF4AC,extended,0000FF36
+patch=1,EE,203AF4AC,extended,00000000
 patch=1,EE,D03C59F8,extended,00000009
 patch=1,EE,203C59F8,extended,10000009
 patch=1,EE,D03CFFF0,extended,00000009
