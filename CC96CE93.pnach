@@ -39,10 +39,14 @@ patch=1,EE,2049C094,extended,00000000
 patch=1,EE,D049C0C4,extended,00001826
 patch=1,EE,2049C0C8,extended,34030001
 // ---- In-Battle Checksum
+patch=1,EE,D0397A8C,extended,00000050
+patch=1,EE,20397A8C,extended,10000050
 patch=1,EE,D0397C0C,extended,0000002E
 patch=1,EE,20397C0C,extended,1000002E
 patch=1,EE,D0397CAC,extended,0000102A
 patch=1,EE,20397CB0,extended,00000000
+patch=1,EE,D03A6DD4,extended,0000003C
+patch=1,EE,203A6DD4,extended,1000003C
 patch=1,EE,D03ABF98,extended,0000FFF9
 patch=1,EE,203ABF98,extended,00000000
 patch=1,EE,D03ABFB4,extended,0000FFFA
