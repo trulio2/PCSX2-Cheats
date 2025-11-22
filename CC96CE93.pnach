@@ -460,6 +460,7 @@ patch=1,EE,D0496320,extended,0000000C
 patch=1,EE,20496320,extended,24030024
 
 
+// Removed some quest items just in case
 [All Items 99]
 author=Trulio
 description=99 for all items (go to the Items menu)
