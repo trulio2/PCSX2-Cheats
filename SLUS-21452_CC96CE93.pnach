@@ -403,6 +403,7 @@ patch=1,EE,01FEDD78,word,08126A4E
 patch=1,EE,01FEDD7C,word,00000000
 
 
+// Will crash the game if you try to restore an empty slot
 [No limit For Sealstone Withdrawals]
 author=Trulio
 description=No limit for switching sealstones. The number may go negative tho (this also allows to return sealstones that aren't restored yet, and it'll restore them, for free)
