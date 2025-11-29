@@ -23,11 +23,10 @@ patch=1,EE,204A5DC8,extended,34020001
 patch=1,EE,204A5EFC,extended,00000000
 patch=1,EE,204A5F30,extended,34030001
 // ---- 戦闘中チェックサム
-patch=1,EE,E01C102A,extended,0039D464
+patch=1,EE,E01B102A,extended,0039D464
 patch=1,EE,2039D25C,extended,10000050
 patch=1,EE,2039D3C8,extended,1000002D
 patch=1,EE,2039D468,extended,00000000
-patch=1,EE,203AC594,extended,1000003C
 patch=1,EE,203B1704,extended,1000001E
 patch=1,EE,203B1758,extended,00000000
 patch=1,EE,203B1774,extended,00000000
