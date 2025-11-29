@@ -34,10 +34,11 @@ patch=1,EE,2049BF60,extended,34020001
 patch=1,EE,2049C094,extended,00000000
 patch=1,EE,2049C0C8,extended,34030001
 // ---- In-Battle Checksum
-patch=1,EE,E01B102A,extended,00397CAC
+patch=1,EE,E01C102A,extended,00397CAC
 patch=1,EE,20397A8C,extended,10000050
 patch=1,EE,20397C0C,extended,1000002E
 patch=1,EE,20397CB0,extended,00000000
+patch=1,EE,203A6DD4,extended,1000003C
 patch=1,EE,203ABF44,extended,1000001E
 patch=1,EE,203ABF98,extended,00000000
 patch=1,EE,203ABFB4,extended,00000000
@@ -62,6 +63,12 @@ patch=1,EE,20430BE0,extended,10000009
 patch=1,EE,20431A64,extended,10000022
 patch=1,EE,20431C0C,extended,00000000
 patch=1,EE,20431C1C,extended,10000010
+// ---- For Broken Save Files
+patch=1,EE,E004001A,extended,005053BC
+patch=1,EE,205053BC,extended,00000000
+patch=1,EE,205053C0,extended,00000000
+patch=1,EE,20505418,extended,34010000
+patch=1,EE,20505448,extended,10000051
 
 
 // Important Code: Will prevent freezes if you have one of these characters on the active team in the beginning

@@ -23,10 +23,11 @@ patch=1,EE,204A5DC8,extended,34020001
 patch=1,EE,204A5EFC,extended,00000000
 patch=1,EE,204A5F30,extended,34030001
 // ---- 戦闘中チェックサム
-patch=1,EE,E01B102A,extended,0039D464
+patch=1,EE,E01C102A,extended,0039D464
 patch=1,EE,2039D25C,extended,10000050
 patch=1,EE,2039D3C8,extended,1000002D
 patch=1,EE,2039D468,extended,00000000
+patch=1,EE,203AC594,extended,1000003C
 patch=1,EE,203B1704,extended,1000001E
 patch=1,EE,203B1758,extended,00000000
 patch=1,EE,203B1774,extended,00000000
@@ -51,6 +52,12 @@ patch=1,EE,204360D0,extended,10000009
 patch=1,EE,20436F54,extended,10000022
 patch=1,EE,204370FC,extended,00000000
 patch=1,EE,2043710C,extended,1000000E
+// ---- 破損したセーブデータ用
+patch=1,EE,E004001A,extended,0050A70C
+patch=1,EE,2050A70C,extended,00000000
+patch=1,EE,2050A710,extended,00000000
+patch=1,EE,2050A768,extended,34010000
+patch=1,EE,2050A798,extended,10000051
 
 
 [戦闘時フリーズ防止]
