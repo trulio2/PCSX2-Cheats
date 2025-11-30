@@ -1,5 +1,13 @@
 ### Valkyrie Profile 2: Silmeria [SLUS-21452 CC96CE93]
 
+Save File Corruption
+
+- The save file breaking was not a joke. If the anticheat finds any modifications, the game will set some flags during cutscenes and mid battle, and if you manage to save while these flags are set (that should be a rare problem, since the game will freeze before you're able to finish saving it), the game will catch these flags and will freeze/bug out during battles (you'll get a weird bug where the victory screen doesnt show up, just like in some boss fights)
+- Even if you're not using any cheats or modified items/characters, if these flags are corrupted, the game will crash eventually
+- Fixed 2 of the 3 problems i found. The freezes before and after battle seems to be fixed, but the victory screen bug can still show up
+- Going to battle with cheats enabled and without an anticheat will mess with dozens of flags, so there could still be even more problems hidden somewhere
+- This problem is "rare", since it'll only happen if you're using cheats with an incomplete anticheat (that will stop the freezes, but not the corruption of flags), or if you're manually breaking these freezes directly in the debugger
+
 In-Battle checksum verification
 
 - Seems to be fine for now, but there are literally hundreds of validations happening in many different places during battle. Will need more tests to be certain that it's all fixed
@@ -11,7 +19,6 @@ More than 36 characters (probably not possible)
 
 Playable enemy
 
-- Make a playable enemy. Find where a character is created and swap the information of the model and animations of the enemy
 - 002F8D68 hints here (358FF40F 358FF46B)
 
 Tutorial for how to use it
