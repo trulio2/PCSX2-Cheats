@@ -52,11 +52,12 @@ patch=1,EE,20436F54,extended,10000022
 patch=1,EE,204370FC,extended,00000000
 patch=1,EE,2043710C,extended,1000000E
 // ---- 破損したセーブデータ用
-patch=1,EE,E004001A,extended,0050A70C
-patch=1,EE,2050A70C,extended,00000000
-patch=1,EE,2050A710,extended,00000000
-patch=1,EE,2050A768,extended,34010000
-patch=1,EE,2050A798,extended,10000051
+//patch=1,EE,E005102A,extended,0039D464
+//patch=1,EE,203C5958,extended,34030000
+//patch=1,EE,2050A70C,extended,00000000
+//patch=1,EE,2050A710,extended,00000000
+//patch=1,EE,2050A768,extended,34010000
+//patch=1,EE,2050A798,extended,10000051
 
 
 [(!) 戦闘時フリーズ防止]

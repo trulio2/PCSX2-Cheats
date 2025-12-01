@@ -65,11 +65,12 @@ patch=1,EE,20431A64,extended,10000022
 patch=1,EE,20431C0C,extended,00000000
 patch=1,EE,20431C1C,extended,10000010
 // ---- For Broken Save Files
-patch=1,EE,E004001A,extended,005053BC
-patch=1,EE,205053BC,extended,00000000
-patch=1,EE,205053C0,extended,00000000
-patch=1,EE,20505418,extended,34010000
-patch=1,EE,20505448,extended,10000051
+//patch=1,EE,E005102A,extended,00397CAC
+//patch=1,EE,203C01A4,extended,34030000
+//patch=1,EE,205053BC,extended,00000000
+//patch=1,EE,205053C0,extended,00000000
+//patch=1,EE,20505418,extended,34010000
+//patch=1,EE,20505448,extended,10000051
 
 
 // Important Code: Will prevent freezes if you have one of these characters on the active team in the beginning
