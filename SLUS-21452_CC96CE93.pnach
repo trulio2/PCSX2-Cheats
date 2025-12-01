@@ -13,7 +13,7 @@
 // Must also be always on if you're trying to use 2 or more of the same character on the active team
 //
 // This code will ignore the validation and stop the convoluted checksum functions
-[Disable Anti-Cheat Systems (! are cheats that requires this one, if they are kept enabeld)]
+[Disable Anti-Cheat Systems (! are cheats that requires this one, if they are kept enabled)]
 author=Trulio
 description=Ignore memory checksum validation and remove the loop that creates it
 // ---- Main Checksum (after cutscene, after battle, map change)
