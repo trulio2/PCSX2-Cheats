@@ -12,10 +12,12 @@
 // This code can be disabled if you're not using cheats that change bytes inside functions (it's fine if you're changing variable stuff, like items, stats and characters) (Since the code to stop freezes in battle and the code to stop the game from removing characters mess with functions, this code must be activated while using them)
 // Must also be always on if you're trying to use 2 or more of the same character on the active team
 //
+// So, this is not needed if you don't have any of the (!) cheats currently enabled, are not trying to use dupes in battle and your save isn't corrupted 
+//
 // This code will ignore the validation and stop the convoluted checksum functions
 [Disable Anti-Cheat Systems (! are cheats that requires this one, if they are kept enabled)]
 author=Trulio
-description=Ignore memory checksum validation and remove the loop that creates it
+description=Ignore memory checksum validation and remove loop that creates it
 // ---- Main Checksum (after cutscene, after battle, map change)
 patch=1,EE,E006FFF4,extended,00423464
 patch=1,EE,20423464,extended,00000000
