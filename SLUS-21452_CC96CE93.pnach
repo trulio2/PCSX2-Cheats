@@ -13,9 +13,9 @@
 // Must also be always on if you're trying to use 2 or more of the same character on the active team
 //
 // This code will ignore the validation and stop the convoluted checksum functions
-[Disable Anti-Cheat Systems]
+[Disable Anti-Cheat Systems (! are cheats that requires this one, if they are kept enabeld)]
 author=Trulio
-description=Ignore memory checksum validation and remove the loop to create it
+description=Ignore memory checksum validation and remove the loop that creates it
 // ---- Main Checksum (after cutscene, after battle, map change)
 patch=1,EE,E006FFF4,extended,00423464
 patch=1,EE,20423464,extended,00000000
@@ -78,7 +78,7 @@ patch=1,EE,20505448,extended,10000051
 // But the best solution imo is to just skip the entire function that does this validation. This cheat will force the game to also skip this validation in the early game
 //
 // Can be disabled after getting to the Hall of Valhalla, no problems after that (the exact moment is right after beating the White Dragon when Alicia finds the ring that fell during the battle with Odin, their ult will also update here)
-[Anti Freeze In Battles]
+[(!) Anti Freeze In Battles]
 author=Trulio
 description=(Can be disabled after getting to the Hall of Valhalla)Prevent freezes when using late game characters in the beginning
 patch=1,EE,D0398E10,extended,00001FFE
@@ -91,7 +91,7 @@ patch=1,EE,20398E10,extended,20030001
 // Characters will be removed if added before they're supposed to, and even if they're added again after leaving the party in the story.
 // For some reason the game doesn't try to remove Freya, so you don't need this code if you're adding only her
 // I guess it's because she's not a "normal" playable story character, since she only joins in Seraphic Gate
-[Stop The Game From Removing Characters]
+[(!) Stop The Game From Removing Characters]
 author=Trulio
 description=Stop the game from removing Brahms, Lenneth, Silmeria, Hrist, Valkyrie, Leone, Arngrim, Lezard and Dylan from the party (they won't be removed even if they're supposed to at that point in the story)
 patch=1,EE,E002382B,extended,003BB5C4
@@ -136,28 +136,14 @@ patch=1,EE,01FEB074,word,080EED73
 patch=1,EE,01FEB078,word,00000000
 
 
-[36 Characters Limit]
+[(!) 36 Characters Limit]
 author=Trulio
 description=Up from 33
 patch=1,EE,D03B5E58,extended,00000021
 patch=1,EE,203B5E58,extended,2A620024
 
 
-[Ether Laser]
-author=Trulio
-description=Changes Ether Laser atk and hit. Base is 1400 atk(578 hex) and 50 hit(32 hex)
-patch=1,EE,0031C10C,word,13DC0032
-patch=1,EE,0031C110,word,00000032
-patch=1,EE,0031C114,word,00000032
-
-
-[Angel Slayer]
-author=Trulio
-description=Changes Angel Slayer to allow for 3 attacks
-patch=1,EE,00315280,word,C0000000
-
-
-[Characters Join With All Skills, Spells And Attacks Unlocked]
+[(!) Characters Join With All Skills, Spells And Attacks Unlocked]
 author=Trulio
 description=Characters will join the party with every skill, spells and attacks unlocked. Will work on randoms found on maps later
 patch=1,EE,002F3F9C,word,00000000
@@ -189,7 +175,7 @@ patch=1,EE,01FEA240,word,080BD832
 patch=1,EE,01FEA244,word,00000000
 
 
-[Mithra Swap]
+[(!) Mithra Swap]
 author=Trulio
 description=(Save, close the game and disable this cheat after getting the characters)4 Freyas, Lenneth, Hrist, Silmeria, Valkyrie, Brahms, Leone, Arngrim, Lezard, Zunde and Celes together with Mithra
 patch=1,EE,E002001E,extended,003C20C0
@@ -261,7 +247,7 @@ patch=1,EE,01FEAE78,word,00000000
 
 
 // Use this cheat to make these characters be level 1 when you're adding them together with Mithra
-[Characters Join At Level 1]
+[(!) Characters Join At Level 1]
 author=Trulio
 description=(Save, close the game and disable this cheat after getting the characters)Freya, Brahms, Lenneth, Hrist, Silmeria and Valkryie will be level 1 when they join the party. Since they don't have level 1 stats, i made it the f up
 patch=1,EE,002F8E54,word,087FAD80
@@ -364,6 +350,20 @@ patch=1,EE,01FEADDC,word,24060001
 patch=1,EE,01FEADEC,word,24060001
 patch=1,EE,01FEADFC,word,24060001
 patch=1,EE,01FEAE0C,word,24060001
+
+
+[Ether Laser]
+author=Trulio
+description=Changes Ether Laser atk and hit. Base is 1400 atk(578 hex) and 50 hit(32 hex)
+patch=1,EE,0031C10C,word,13DC0032
+patch=1,EE,0031C110,word,00000032
+patch=1,EE,0031C114,word,00000032
+
+
+[Angel Slayer]
+author=Trulio
+description=Changes Angel Slayer to allow for 3 attacks
+patch=1,EE,00315280,word,C0000000
 
 
 // Restored Sealstones won't show up in their original places on the map, so this could make some puzzles harder to solve

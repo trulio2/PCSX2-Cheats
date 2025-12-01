@@ -2,9 +2,9 @@
 // Git: https://github.com/trulio2/PCSX2-Cheats/blob/master/SLPM-66419_774DE8E2.pnach
 
 
-[ゲームガード無効化]
+[アンチチート機能の無効化（※「!」付きチートはこれを有効にして下さい）]
 author=Trulio
-description=チェックサム判定とループ処理を無効化します
+description=メモリチェックサム判定を無視し、生成処理のループを無効化します
 // ---- メインチェックサム（イベント後、戦闘後、マップ切替後）
 patch=1,EE,E006FFF4,extended,00428C14
 patch=1,EE,20428C14,extended,00000000
@@ -59,14 +59,14 @@ patch=1,EE,2050A768,extended,34010000
 patch=1,EE,2050A798,extended,10000051
 
 
-[戦闘時フリーズ防止]
+[(!) 戦闘時フリーズ防止]
 author=Trulio
 description=（ヴァルハラの間到達後は無効化可）序盤で後半加入キャラを使用した際のフリーズを防止します
 patch=1,EE,D039E5D0,extended,00001FFE
 patch=1,EE,2039E5D0,extended,20030001
 
 
-[キャラ強制離脱の無効化]
+[(!) キャラ強制離脱の無効化]
 author=Trulio
 description=ブラムス、レナス、シルメリア、アーリィ、ヴァルキリー、レオーネ、アリューゼ、レザード、ディラン等がストーリー進行で離脱するはずの場面でもパーティから外れなくなります
 patch=1,EE,E002382B,extended,003C0E04
@@ -111,28 +111,14 @@ patch=1,EE,01FEB074,word,080F0383
 patch=1,EE,01FEB078,word,00000000
 
 
-[キャラ上限36人化]
+[(!) キャラ上限36人化]
 author=Trulio
 description=所持キャラクター上限を33人 → 36人に拡張します
 patch=1,EE,D03BB698,extended,00000021
 patch=1,EE,203BB698,extended,2A620024
 
 
-[透器エーテル・レイザー性能変更]
-author=Trulio
-description=透器エーテル・レイザーの攻撃力と命中率を変更します（基本値：攻撃力1400〔0x578〕／命中50〔0x32〕）
-patch=1,EE,0032190C,word,16DC0032
-patch=1,EE,00321910,word,00000032
-patch=1,EE,00321914,word,00000032
-
-
-[咎人の剣"神を斬獲せし者"3回攻撃化]
-author=Trulio
-description=咎人の剣"神を斬獲せし者"を3回攻撃可能に変更します
-patch=1,EE,0031AA80,word,C0000000
-
-
-[加入時に全スキル・魔法・攻撃技解放]
+[(!) 加入時に全スキル・魔法・攻撃技解放]
 author=Trulio
 description=参戦キャラが全スキル・全魔法・全攻撃技を解放済みの状態で加入しますフィールドで仲間になるランダムキャラにも適用されます
 patch=1,EE,002F3E4C,word,00000000
@@ -164,7 +150,7 @@ patch=1,EE,01FEA240,word,080BD7DE
 patch=1,EE,01FEA244,word,00000000
 
 
-[ミトラ加入キャラ入替]
+[(!) ミトラ加入キャラ入替]
 author=Trulio
 description=（取得後はセーブ→ゲーム終了→チート無効化推奨）ミトラと一緒にフレイ×4、レナス、アーリィ、シルメリア、ヴァルキリー、ブラムス、レオーネ、アリューゼ、レザード、ザンデ、セレスが加入します
 patch=1,EE,E002001E,extended,003C7900
@@ -235,7 +221,7 @@ patch=1,EE,01FEAE74,word,080F1E42
 patch=1,EE,01FEAE78,word,00000000
 
 
-[加入キャラのレベル1化]
+[(!) 加入キャラのレベル1化]
 author=Trulio
 description=取得後はセーブ→ゲーム終了→チート無効化推奨）フレイ、ブラムス、レナス、アーリィ、シルメリア、ヴァルキリーがレベル1で加入します※レベル1の固有ステータスが存在しないため、独自に調整しています
 patch=1,EE,002F8D04,word,087FAD80
@@ -338,6 +324,20 @@ patch=1,EE,01FEADDC,word,24060001
 patch=1,EE,01FEADEC,word,24060001
 patch=1,EE,01FEADFC,word,24060001
 patch=1,EE,01FEAE0C,word,24060001
+
+
+[透器エーテル・レイザー性能変更]
+author=Trulio
+description=透器エーテル・レイザーの攻撃力と命中率を変更します（基本値：攻撃力1400〔0x578〕／命中50〔0x32〕）
+patch=1,EE,0032190C,word,16DC0032
+patch=1,EE,00321910,word,00000032
+patch=1,EE,00321914,word,00000032
+
+
+[咎人の剣"神を斬獲せし者"3回攻撃化]
+author=Trulio
+description=咎人の剣"神を斬獲せし者"を3回攻撃可能に変更します
+patch=1,EE,0031AA80,word,C0000000
 
 
 [封印石復元で全解放]
