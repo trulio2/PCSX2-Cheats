@@ -23,7 +23,7 @@ patch=1,EE,204A5DC8,extended,34020001
 patch=1,EE,204A5EFC,extended,00000000
 patch=1,EE,204A5F30,extended,34030001
 // ---- 戦闘中チェックサム
-patch=1,EE,E01B102A,extended,0039D464
+patch=1,EE,E01A102A,extended,0039D464
 patch=1,EE,2039D25C,extended,10000050
 patch=1,EE,2039D3C8,extended,1000002D
 patch=1,EE,2039D468,extended,00000000
@@ -49,7 +49,6 @@ patch=1,EE,203DA198,extended,10000009
 patch=1,EE,20436064,extended,10000024
 patch=1,EE,204360D0,extended,10000009
 patch=1,EE,20436F54,extended,10000022
-patch=1,EE,204370FC,extended,00000000
 patch=1,EE,2043710C,extended,1000000E
 // ---- 破損したセーブデータ用
 //patch=1,EE,E005102A,extended,0039D464
