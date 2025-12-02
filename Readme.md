@@ -4,7 +4,7 @@ Save File Corruption
 
 - The save file breaking was not a joke. If the anticheat finds any modifications, the game will set some flags during cutscenes and mid battle, and if you manage to save while these flags are set (that should be a rare problem, since the game will freeze before you're able to finish saving it), the game will catch these flags and will freeze/bug out during battles (you'll get a weird bug where the victory screen doesnt show up, just like in some boss fights)
 - Even if you're not using any cheats or modified items/characters, if these flags are corrupted, the game will crash eventually
-- Fixed 2 of the 3 problems i found. The freezes before and after battle seems to be fixed, but the victory screen bug can still show up
+- Fixed the freezes before and after battle and victory screen bug. Need more tests for side effects
 - Going to battle with cheats enabled and without an anticheat will mess with dozens of flags, so there could still be even more problems hidden somewhere
 - This problem is "rare", since it'll only happen if you're using cheats with an incomplete anticheat (that will stop the freezes, but not the corruption of flags), or if you're manually breaking these freezes directly in the debugger
 
