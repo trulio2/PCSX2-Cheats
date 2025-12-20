@@ -354,6 +354,52 @@ patch=1,EE,01FEADFC,word,24060001
 patch=1,EE,01FEAE0C,word,24060001
 
 
+[(!) Heavenly Punishment Costs 15 AP]
+author=Trulio
+description=Freya's Heavenly Punishment cost down to 15
+patch=1,EE,E002FF93,extended,003067B4
+patch=1,EE,203067B0,extended,087FAFC9
+patch=1,EE,203067B4,extended,00000000
+patch=1,EE,E002FF67,extended,0041A528
+patch=1,EE,2041A528,extended,087FAFC0
+patch=1,EE,2041A52C,extended,00000000
+patch=1,EE,01FEBF00,word,2442FF67
+patch=1,EE,01FEBF04,word,2403002A
+patch=1,EE,01FEBF08,word,14620003
+patch=1,EE,01FEBF0C,word,00000000
+patch=1,EE,01FEBF10,word,2402000F
+patch=1,EE,01FEBF14,word,00000000
+patch=1,EE,01FEBF18,word,02021818
+patch=1,EE,01FEBF1C,word,0810694C
+patch=1,EE,01FEBF20,word,00000000
+patch=1,EE,01FEBF24,word,90620000
+patch=1,EE,01FEBF28,word,2442FF93
+patch=1,EE,01FEBF2C,word,2403002A
+patch=1,EE,01FEBF30,word,14620003
+patch=1,EE,01FEBF34,word,00000000
+patch=1,EE,01FEBF38,word,2402000F
+patch=1,EE,01FEBF3C,word,00000000
+patch=1,EE,01FEBF40,word,080C19EE
+
+
+[(!) Attacks and Spells Costs 1 AP]
+author=Trulio
+description=All attacks and spells costs 1 AP
+patch=1,EE,D0306754,extended,0000FFD9
+patch=1,EE,20306754,extended,24020001
+patch=1,EE,D03067B4,extended,0000FF93
+patch=1,EE,203067B4,extended,24020001
+patch=1,EE,D041A528,extended,0000FF67
+patch=1,EE,2041A528,extended,24020001
+
+
+[Dupe Attacks]
+author=Trulio
+description=Allow to set the same attack multiple times
+patch=1,EE,D0499AF4,extended,0000FFD8
+patch=1,EE,20499AF0,extended,28A30000
+
+
 [Ether Laser]
 author=Trulio
 description=Changes Ether Laser atk and hit. Base is 1400 atk(578 hex) and 50 hit(32 hex)

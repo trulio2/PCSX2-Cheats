@@ -326,6 +326,52 @@ patch=1,EE,01FEADFC,word,24060001
 patch=1,EE,01FEAE0C,word,24060001
 
 
+[(!) ヘブンリィ・パニッシュメント消費AP15]
+author=Trulio
+description=フレイの「ヘブンリィ・パニッシュメント」の消費APを15に変更します
+patch=1,EE,E002FF93,extended,00306664
+patch=1,EE,20306660,extended,087FAFC9
+patch=1,EE,20306664,extended,00000000
+patch=1,EE,E002FF67,extended,0041FA18
+patch=1,EE,2041FA18,extended,087FAFC0
+patch=1,EE,2041FA1C,extended,00000000
+patch=1,EE,01FEBF00,word,2442FF67
+patch=1,EE,01FEBF04,word,2403002A
+patch=1,EE,01FEBF08,word,14620003
+patch=1,EE,01FEBF0C,word,00000000
+patch=1,EE,01FEBF10,word,2402000F
+patch=1,EE,01FEBF14,word,00000000
+patch=1,EE,01FEBF18,word,02021818
+patch=1,EE,01FEBF1C,word,08107E88
+patch=1,EE,01FEBF20,word,00000000
+patch=1,EE,01FEBF24,word,90620000
+patch=1,EE,01FEBF28,word,2442FF93
+patch=1,EE,01FEBF2C,word,2403002A
+patch=1,EE,01FEBF30,word,14620003
+patch=1,EE,01FEBF34,word,00000000
+patch=1,EE,01FEBF38,word,2402000F
+patch=1,EE,01FEBF3C,word,00000000
+patch=1,EE,01FEBF40,word,080C199A
+
+
+[(!) 攻撃・魔法の消費AP1]
+author=Trulio
+description=全ての攻撃技および魔法の消費APを1に変更します
+patch=1,EE,D0306604,extended,0000FFD9
+patch=1,EE,20306604,extended,24020001
+patch=1,EE,D0306664,extended,0000FF93
+patch=1,EE,20306664,extended,24020001
+patch=1,EE,D041FA18,extended,0000FF67
+patch=1,EE,2041FA18,extended,24020001
+
+
+[攻撃技の重複設定可]
+author=Trulio
+description=同一の攻撃技を複数スロットに設定できるようになります
+patch=1,EE,D04A3A74,extended,0000FFD8
+patch=1,EE,204A3A70,extended,28A30000
+
+
 [透器エーテル・レイザー性能変更]
 author=Trulio
 description=透器エーテル・レイザーの攻撃力と命中率を変更します（基本値：攻撃力1400〔0x578〕／命中50〔0x32〕）
