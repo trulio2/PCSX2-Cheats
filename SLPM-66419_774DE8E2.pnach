@@ -362,7 +362,7 @@ patch=1,EE,20306604,extended,24020001
 patch=1,EE,D0306664,extended,0000FF93
 patch=1,EE,20306664,extended,24020001
 patch=1,EE,D041FA18,extended,0000FF67
-patch=1,EE,2041FA18,extended,24020001
+patch=1,EE,2041FA18,extended,24020000
 
 
 [攻撃技の重複設定可]

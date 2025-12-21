@@ -390,7 +390,7 @@ patch=1,EE,20306754,extended,24020001
 patch=1,EE,D03067B4,extended,0000FF93
 patch=1,EE,203067B4,extended,24020001
 patch=1,EE,D041A528,extended,0000FF67
-patch=1,EE,2041A528,extended,24020001
+patch=1,EE,2041A528,extended,24020000
 
 
 [Dupe Attacks]
