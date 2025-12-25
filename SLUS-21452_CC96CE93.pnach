@@ -370,7 +370,7 @@ patch=1,EE,01FEBF3C,word,00000000
 patch=1,EE,01FEBF40,word,080C19EE
 
 
-[(!) Attacks and Spells Cost 1 AP]
+[(!) Attacks And Spells Cost 1 AP]
 author=Trulio
 description=All attacks and spells cost 1 AP
 patch=1,EE,D0306754,extended,0000FFD9
@@ -379,6 +379,7 @@ patch=1,EE,D03067B4,extended,0000FF93
 patch=1,EE,203067B4,extended,24020001
 patch=1,EE,D041A528,extended,0000FF67
 patch=1,EE,2041A528,extended,24020000
+
 
 // This change won't be caught by the anti-cheat system (all menu functions seems to be safe), so you don't need to disable the anti-cheat to keep this cheat active
 // But having a character with the same attack set more than once will trigger the anti-cheat in the beginning of battles and freeze the game
