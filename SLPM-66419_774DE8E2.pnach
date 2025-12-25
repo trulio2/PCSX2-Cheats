@@ -352,7 +352,7 @@ patch=1,EE,D041FA18,extended,0000FF67
 patch=1,EE,2041FA18,extended,24020000
 
 
-[攻撃技の重複設定可]
+[(!*) 攻撃技の重複設定可]
 author=Trulio
 description=同一の攻撃技を複数スロットに設定できるようになります
 patch=1,EE,D04A3A74,extended,0000FFD8
