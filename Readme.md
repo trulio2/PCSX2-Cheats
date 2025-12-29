@@ -1,6 +1,6 @@
 ### Valkyrie Profile 2: Silmeria [SLUS-21452 CC96CE93]
 
-Save File Corruption
+Save File Corruption 1073B8E5
 
 - The save file breaking was not a joke. If the anticheat finds any modifications, the game will set some flags during cutscenes and mid battle, and if you manage to save while these flags are set (that should be a rare problem, since the game will freeze before you're able to finish saving it), the game will catch these flags and will freeze/bug out during battles (you'll get a weird bug where the victory screen doesnt show up, just like in some boss fights)
 - Even if you're not using any cheats or modified items/characters, if these flags are corrupted, the game will crash eventually
