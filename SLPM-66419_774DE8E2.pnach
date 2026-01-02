@@ -355,8 +355,27 @@ patch=1,EE,D0306604,extended,0000FFD9
 patch=1,EE,20306604,extended,24020001
 patch=1,EE,D0306664,extended,0000FF93
 patch=1,EE,20306664,extended,24020001
+patch=1,EE,D03AE464,extended,000043FD
+patch=1,EE,203AE460,extended,00000000
 patch=1,EE,D041FA18,extended,0000FF67
 patch=1,EE,2041FA18,extended,24020000
+
+
+[(!) 戦闘メニュー常時使用可]
+author=Trulio
+description=戦闘メニューのクールダウンを撤廃します
+patch=1,EE,E002011C,extended,00377500
+patch=1,EE,20377514,extended,14000004
+patch=1,EE,20473A30,extended,14000003
+
+
+[(!) 1回攻撃でスペシャルゲージMAX]
+author=Trulio
+description=攻撃を1回行うとスペシャルゲージが100になります
+patch=1,EE,D039AD68,extended,000096FD
+patch=1,EE,2039AD68,extended,34050000
+patch=1,EE,D0418EA8,extended,000096FD
+patch=1,EE,20418EA8,extended,34050000
 
 
 [(!*) 攻撃技の重複設定可]

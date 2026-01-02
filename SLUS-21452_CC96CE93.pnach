@@ -385,8 +385,27 @@ patch=1,EE,D0306754,extended,0000FFD9
 patch=1,EE,20306754,extended,24020001
 patch=1,EE,D03067B4,extended,0000FF93
 patch=1,EE,203067B4,extended,24020001
+patch=1,EE,D03A8CA4,extended,000043FD
+patch=1,EE,203A8CA0,extended,00000000
 patch=1,EE,D041A528,extended,0000FF67
 patch=1,EE,2041A528,extended,24020000
+
+
+[(!) Battle Menu Always Available]
+author=Trulio
+description=Remove battle menu cooldown
+patch=1,EE,E002011C,extended,00371CA0
+patch=1,EE,20371CB4,extended,14000004
+patch=1,EE,2046E5A0,extended,14000003
+
+
+[(!) Full Special Gauge After 1 Attack]
+author=Trulio
+description=Special Gauge to 100 after 1 attack
+patch=1,EE,D03954F8,extended,000096FD
+patch=1,EE,203954F8,extended,34050000
+patch=1,EE,D04139C0,extended,000096FD
+patch=1,EE,204139C0,extended,34050000
 
 
 // This change won't be caught by the anti-cheat system (all menu functions seems to be safe), so you don't need to disable the anti-cheat to keep this cheat active
