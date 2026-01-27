@@ -385,6 +385,15 @@ patch=1,EE,D04A3A74,extended,0000FFD8
 patch=1,EE,204A3A70,extended,28A30000
 
 
+[(!) ドロップ率100%]
+author=Trulio
+description=部位を破壊した際のドロップ率が100%になります
+patch=1,EE,D04161AC,extended,0000001C
+patch=1,EE,204161AC,extended,00000000
+patch=1,EE,D03E8598,extended,0000001F
+patch=1,EE,203E8598,extended,00000000
+
+
 [透器エーテル・レイザー性能変更]
 author=Trulio
 description=透器エーテル・レイザーの攻撃力と命中率を変更します（基本値：攻撃力1400〔0x578〕／命中50〔0x32〕）
