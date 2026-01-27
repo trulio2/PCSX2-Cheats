@@ -387,7 +387,7 @@ patch=1,EE,204A3A70,extended,28A30000
 
 [(!) ドロップ率100%]
 author=Trulio
-description=部位を破壊した際のドロップ率が100%になります
+description=部位破壊およびボスのドロップが100%になります
 patch=1,EE,D04161AC,extended,0000001C
 patch=1,EE,204161AC,extended,00000000
 patch=1,EE,D03E8598,extended,0000001F
