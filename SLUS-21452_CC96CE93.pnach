@@ -427,6 +427,13 @@ patch=1,EE,D03E2EC8,extended,0000001F
 patch=1,EE,203E2EC8,extended,00000000
 
 
+[Let Everyone Equip Everything]
+author=Trulio
+description=Allow every armor and weapon to be equipped by every character
+patch=1,EE,D049D768,extended,00000129
+patch=1,EE,2049D768,extended,00000000
+
+
 [Ether Laser]
 author=Trulio
 description=Changes Ether Laser atk and hit. Base is 1400 atk(578 hex) and 50 hit(32 hex)

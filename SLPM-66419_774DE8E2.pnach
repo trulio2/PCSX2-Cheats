@@ -394,6 +394,13 @@ patch=1,EE,D03E8598,extended,0000001F
 patch=1,EE,203E8598,extended,00000000
 
 
+[全キャラクター全装備可能]
+author=Trulio
+description=すべてのキャラクターがすべての武器・防具を装備できるようになります
+patch=1,EE,D04A76E8,extended,00000129
+patch=1,EE,204A76E8,extended,00000000
+
+
 [透器エーテル・レイザー性能変更]
 author=Trulio
 description=透器エーテル・レイザーの攻撃力と命中率を変更します（基本値：攻撃力1400〔0x578〕／命中50〔0x32〕）
