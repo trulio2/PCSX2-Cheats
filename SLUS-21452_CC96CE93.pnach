@@ -440,9 +440,9 @@ description=Changes Ether Laser atk and hit. Base is 1400 atk(578 hex) and 50 hi
 patch=1,EE,1031C10C,extended,00000578
 patch=1,EE,1031C110,extended,00000578
 patch=1,EE,1031C114,extended,00000032
-patch=1,EE,1031C118,extended,00000063
-patch=1,EE,1031C11C,extended,00000063
-patch=1,EE,1031C120,extended,00000063
+patch=1,EE,1031C118,extended,00000064
+patch=1,EE,1031C11C,extended,00000064
+patch=1,EE,1031C120,extended,00000064
 
 
 [Ether Set Effects]

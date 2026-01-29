@@ -407,9 +407,9 @@ description=透器エーテル・レイザーの攻撃力と命中率を変更�
 patch=1,EE,1032190C,extended,00000578
 patch=1,EE,10321910,extended,00000578
 patch=1,EE,10321914,extended,00000032
-patch=1,EE,10321918,extended,00000063
-patch=1,EE,1032191C,extended,00000063
-patch=1,EE,10321920,extended,00000063
+patch=1,EE,10321918,extended,00000064
+patch=1,EE,1032191C,extended,00000064
+patch=1,EE,10321920,extended,00000064
 
 
 [エーテルセット効果付与]
