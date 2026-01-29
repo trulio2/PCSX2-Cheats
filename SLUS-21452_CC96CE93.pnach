@@ -421,10 +421,10 @@ patch=1,EE,20499AF0,extended,28A30000
 [(!) 100% Drop Rate]
 author=Trulio
 description=100% breaking parts and boss drop
-patch=1,EE,D0410CC4,extended,0000001C
-patch=1,EE,20410CC4,extended,00000000
 patch=1,EE,D03E2EC8,extended,0000001F
 patch=1,EE,203E2EC8,extended,00000000
+patch=1,EE,D0410CC4,extended,0000001C
+patch=1,EE,20410CC4,extended,00000000
 
 
 [Let Everyone Equip Everything]
