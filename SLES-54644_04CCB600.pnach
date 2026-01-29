@@ -406,9 +406,12 @@ patch=1,EE,2049D358,extended,00000000
 [Ether Laser]
 author=Trulio
 description=Changes Ether Laser atk and hit. Base is 1400 atk(578 hex) and 50 hit(32 hex)
-patch=1,EE,0031C08C,word,13E00032
-patch=1,EE,0031C090,word,00000032
-patch=1,EE,0031C094,word,00000032
+patch=1,EE,1031C08C,extended,00000578
+patch=1,EE,1031C090,extended,00000578
+patch=1,EE,1031C094,extended,00000032
+patch=1,EE,1031C098,extended,00000063
+patch=1,EE,1031C09C,extended,00000063
+patch=1,EE,1031C0A0,extended,00000063
 
 
 [Ether Set Effects]

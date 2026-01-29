@@ -404,9 +404,12 @@ patch=1,EE,204A76E8,extended,00000000
 [透器エーテル・レイザー性能変更]
 author=Trulio
 description=透器エーテル・レイザーの攻撃力と命中率を変更します（基本値：攻撃力1400〔0x578〕／命中50〔0x32〕）
-patch=1,EE,0032190C,word,16DC0032
-patch=1,EE,00321910,word,00000032
-patch=1,EE,00321914,word,00000032
+patch=1,EE,1032190C,extended,00000578
+patch=1,EE,10321910,extended,00000578
+patch=1,EE,10321914,extended,00000032
+patch=1,EE,10321918,extended,00000063
+patch=1,EE,1032191C,extended,00000063
+patch=1,EE,10321920,extended,00000063
 
 
 [エーテルセット効果付与]
