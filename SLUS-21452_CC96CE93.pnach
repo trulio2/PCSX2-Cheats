@@ -442,6 +442,15 @@ patch=1,EE,0031C110,word,00000032
 patch=1,EE,0031C114,word,00000032
 
 
+[Ether Set Effects]
+author=Trulio
+description=Give passive effects to the Ether set
+patch=1,EE,00316A2C,extended,00000003
+patch=1,EE,00316EFC,extended,00000005
+patch=1,EE,003170F4,extended,0000000A
+patch=1,EE,00317324,extended,00000013
+
+
 [Angel Slayer]
 author=Trulio
 description=Changes Angel Slayer to allow for 3 attacks

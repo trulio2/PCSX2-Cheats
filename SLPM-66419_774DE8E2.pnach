@@ -409,6 +409,15 @@ patch=1,EE,00321910,word,00000032
 patch=1,EE,00321914,word,00000032
 
 
+[エーテルセット効果付与]
+author=Trulio
+description=エーテルセットにパッシブ効果を付与します
+patch=1,EE,0031C22C,extended,00000003
+patch=1,EE,0031C6FC,extended,00000005
+patch=1,EE,0031C8F4,extended,0000000A
+patch=1,EE,0031CB24,extended,00000013
+
+
 [咎人の剣"神を斬獲せし者"3回攻撃化]
 author=Trulio
 description=咎人の剣"神を斬獲せし者"を3回攻撃可能に変更します
