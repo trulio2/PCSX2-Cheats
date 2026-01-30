@@ -396,6 +396,13 @@ patch=1,EE,D0410814,extended,0000001C
 patch=1,EE,20410814,extended,00000000
 
 
+[(!) Negate Encounters]
+author=Trulio
+description=Effect of the Elusive Air Law sealstone
+patch=1,EE,D041CB74,extended,00000004
+patch=1,EE,2041CB74,extended,00000000
+
+
 [Let Everyone Equip Everything]
 author=Trulio
 description=Allow every armor and weapon to be equipped by every character

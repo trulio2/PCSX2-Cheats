@@ -394,6 +394,13 @@ patch=1,EE,D04161AC,extended,0000001C
 patch=1,EE,204161AC,extended,00000000
 
 
+[(!) エンカウント無効]
+author=Trulio
+description=ランダムバトルを無効化します
+patch=1,EE,D04222C4,extended,00000004
+patch=1,EE,204222C4,extended,00000000
+
+
 [全キャラクター全装備可能]
 author=Trulio
 description=すべてのキャラクターがすべての武器・防具を装備できるようになります
