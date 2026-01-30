@@ -568,3 +568,11 @@ patch=1,EE,01FEBD74,word,00000000
 patch=1,EE,01FEBD78,word,341B0000
 patch=1,EE,01FEBD7C,word,0812A446
 patch=1,EE,01FEBD80,word,00000000
+
+
+[○ボタン長押しで浮遊]
+author=Trulio
+description=ジャンプ後に○ボタンを押し続けると浮遊します
+patch=1,EE,E001DFFF,extended,001CA0DC
+patch=1,EE,60493268,extended,C1061000
+patch=1,EE,00020000,extended,000002C4
