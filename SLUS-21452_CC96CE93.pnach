@@ -391,6 +391,13 @@ patch=1,EE,D041A528,extended,0000FF67
 patch=1,EE,2041A528,extended,24020000
 
 
+[(!) Remove Dash AP Cost]
+author=Trulio
+description=Battle dash cost 0 AP
+patch=1,EE,D03A8CA4,extended,000043FD
+patch=1,EE,203A8CA0,extended,00000000
+
+
 [(!) Battle Menu Always Available]
 author=Trulio
 description=Remove battle menu cooldown
@@ -432,6 +439,13 @@ author=Trulio
 description=Effect of the Elusive Air Law sealstone
 patch=1,EE,D041CB04,extended,00000004
 patch=1,EE,2041CB04,extended,00000000
+
+
+[(!) Infinite Photons]
+author=Trulio
+description=Remove 3 photons limit
+patch=1,EE,D0413C0C,extended,00000004
+patch=1,EE,20413C0C,extended,10000004
 
 
 [Let Everyone Equip Everything]

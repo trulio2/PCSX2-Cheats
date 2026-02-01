@@ -361,6 +361,13 @@ patch=1,EE,D041FA18,extended,0000FF67
 patch=1,EE,2041FA18,extended,24020000
 
 
+[(!) ダッシュAP消費なし]
+author=Trulio
+description=バトル中のダッシュのAP消費が0になります
+patch=1,EE,D03AE464,extended,000043FD
+patch=1,EE,203AE460,extended,00000000
+
+
 [(!) 戦闘メニュー常時使用可]
 author=Trulio
 description=戦闘メニューのクールダウンを撤廃します
@@ -399,6 +406,13 @@ author=Trulio
 description=ランダムバトルを無効化します
 patch=1,EE,D04222C4,extended,00000004
 patch=1,EE,204222C4,extended,00000000
+
+
+[(!) 光子無限]
+author=Trulio
+description=光子の3個制限を解除します
+patch=1,EE,D04193DC,extended,00000004
+patch=1,EE,204193DC,extended,10000004
 
 
 [全キャラクター全装備可能]
