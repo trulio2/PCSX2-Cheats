@@ -592,3 +592,26 @@ description=Jump and hold Circle to float
 patch=1,EE,E001DFFF,extended,001CA1DC
 patch=1,EE,6048DDE8,extended,C1061000
 patch=1,EE,00020000,extended,000002C4
+
+
+[Gungnir]
+author=Trulio
+description=Change Gungnir stats and add passive effect
+patch=1,EE,103156E4,extended,0000FFFF
+patch=1,EE,103156E8,extended,0000FFFF
+patch=1,EE,103156EC,extended,00000064
+patch=1,EE,103156F0,extended,00000064
+patch=1,EE,103156F4,extended,00000064
+patch=1,EE,103156F8,extended,00000064
+patch=1,EE,10315714,extended,00000065
+
+
+[Bloody Murder]
+author=Trulio
+description=Change Bloody Murder stats
+patch=1,EE,1031612C,extended,0000FFFF
+patch=1,EE,10316130,extended,0000FFFF
+patch=1,EE,10316134,extended,00000064
+patch=1,EE,10316138,extended,00000064
+patch=1,EE,1031613C,extended,00000064
+patch=1,EE,10316140,extended,00000064
