@@ -350,6 +350,16 @@ patch=1,EE,01FEBF3C,word,00000000
 patch=1,EE,01FEBF40,word,080C19BA
 
 
+[(!) Infinite AP And Attacks]
+author=Trulio
+description=Remove AP cost and attack limit
+patch=1,EE,E004102A,extended,00397BAC
+patch=1,EE,203A8BB0,extended,00000000
+patch=1,EE,20405968,extended,00000000
+patch=1,EE,20419B5C,extended,00000000
+patch=1,EE,20419DA0,extended,03E00008
+
+
 [(!) Attacks And Spells Cost 1 AP]
 author=Trulio
 description=All attacks and spells cost 1 AP

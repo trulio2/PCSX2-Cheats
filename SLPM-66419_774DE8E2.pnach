@@ -348,6 +348,16 @@ patch=1,EE,01FEBF3C,word,00000000
 patch=1,EE,01FEBF40,word,080C199A
 
 
+[(!) AP・攻撃回数無限]
+author=Trulio
+description=AP消費および攻撃回数制限を解除します
+patch=1,EE,E004102A,extended,0039D464
+patch=1,EE,203AE460,extended,00000000
+patch=1,EE,2040B4E8,extended,00000000
+patch=1,EE,2041F4FC,extended,00000000
+patch=1,EE,2041F740,extended,03E00008
+
+
 [(!) 攻撃・魔法の消費AP1]
 author=Trulio
 description=全ての攻撃技および魔法の消費APを1に変更します
