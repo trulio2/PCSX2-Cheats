@@ -538,8 +538,11 @@ patch=1,EE,01FEDD7C,word,00000000
 [No limit For Sealstone Withdrawals]
 author=Trulio
 description=No limit for switching sealstones. The number may go negative tho (this also allows to return sealstones that aren't restored yet, and it'll restore them, for free)
-patch=1,EE,D04A0BCC,extended,00000004
+patch=1,EE,E0040002,extended,0049E094
+patch=1,EE,2049E094,extended,34030064
+patch=1,EE,204A0158,extended,34030064
 patch=1,EE,204A0BCC,extended,10000004
+patch=1,EE,204A1420,extended,34040064
 
 
 // 36 is enough

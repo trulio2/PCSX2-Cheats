@@ -502,8 +502,11 @@ patch=1,EE,01FEDD7C,word,00000000
 [封印石の出し入れ制限解除]
 author=Trulio
 description=封印石の出し入れ制限を撤廃します 所持数がマイナスになる場合があります※未復元の封印石も返却可能になり、その際無料で復元されます
-patch=1,EE,D04AAB4C,extended,00000004
+patch=1,EE,E0040002,extended,004A8014
+patch=1,EE,204A8014,extended,34030064
+patch=1,EE,204AA0D8,extended,34030064
 patch=1,EE,204AAB4C,extended,10000004
+patch=1,EE,204AB3A0,extended,34040064
 
 
 [スキルポイント99]
