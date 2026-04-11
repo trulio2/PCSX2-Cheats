@@ -25,4 +25,4 @@ Items Pointer: 0035EC18
 
 Tutorial for how to use it
 
-[![](https://img.youtube.com/vi/7N0e_fsYdbw/hqdefault.jpg)](https://youtu.be/7N0e_fsYdbw)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7N0e_fsYdbw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
