@@ -8,6 +8,10 @@ Save File Corruption 1073B8E5
 - Going to battle with cheats enabled and without an anticheat will mess with dozens of flags, so there could still be even more problems hidden somewhere
 - This problem is "rare", since it'll only happen if you're using cheats with an incomplete anticheat (that will stop the freezes, but not the corruption of flags), or if you're manually breaking these freezes directly in the debugger
 
+Corrupted Memory Card
+
+- The game verifies some of these flags right at the start of the game (when checking the memory card, seems like it looks for the first save slot in the card #1), and if it finds a corrupted flag in the old save the game will store these flags to crash the game. So even if you start a new game without any cheats, if the game catches any corrupted flags in an old save, it'll crash/freeze eventually. Insanity
+
 In-Battle checksum verification
 
 - Seems to be fine for now, but there are literally hundreds of validations happening in many different places during battle. Will need more tests to be certain that it's all fixed
