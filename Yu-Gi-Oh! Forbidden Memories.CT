@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="46">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>8</ID>
+      <Description>"Cards (Enable only when in the Deck Build screen)"</Description>
+      <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+
+aobscan(pattern, 08 0F 80 78 07 0F 80 00 00 00 00 28 00 28 00)
+
+define(zeroAddress, pattern + 40)
+define(ninetyNineAddress, pattern + 313)
+
+registersymbol(zeroAddress)
+registersymbol(ninetyNineAddress)
+
+[DISABLE]
+
+unregistersymbol(zeroAddress)
+unregistersymbol(ninetyNineAddress)
+</AssemblerScript>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>2</ID>
+          <Description>"All cards 99"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+{$lua}
+
+if getAddressSafe("ninetyNineAddress") == nil then
+    print("Enable first")
+    return
+end
+
+local startAddress = getAddress("ninetyNineAddress")
+
+local bytes = {}
+for i = 1, 722 do
+    bytes[i] = 99
+end
+
+writeBytes(startAddress, table.unpack(bytes))
+
+{$asm}
+
+[DISABLE]
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>5</ID>
+          <Description>"No card limit"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+{$lua}
+
+if zeroTimer then
+    zeroTimer.destroy()
+    zeroTimer = nil
+end
+
+if getAddressSafe("zeroAddress") == nil then
+    print("Enable first")
+    return
+end
+
+local startAddress = getAddress("zeroAddress")
+
+local bytes = {}
+for i = 1, 722 do
+    bytes[i] = 0
+end
+
+writeBytes(startAddress, table.unpack(bytes))
+
+zeroTimer = createTimer(nil, false)
+zeroTimer.Interval = 100
+
+zeroTimer.OnTimer = function()
+
+    if getOpenedProcessID() == 0 then
+        zeroTimer.destroy()
+        zeroTimer = nil
+        return
+    end
+
+    local current = readBytes(startAddress, 722, true)
+
+    if current == nil then
+        return
+    end
+
+    for i = 1, 722 do
+        if current[i] ~= 0 then
+            writeBytes(startAddress, table.unpack(bytes))
+            break
+        end
+    end
+end
+
+zeroTimer.Enabled = true
+
+{$asm}
+
+[DISABLE]
+{$lua}
+
+if zeroTimer then
+    zeroTimer.Enabled = false
+    zeroTimer.destroy()
+    zeroTimer = nil
+end
+
+{$asm}
+</AssemblerScript>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>11</ID>
+      <Description>"Duel"</Description>
+      <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+
+aobscan(pattern, 16 1E 80 00 00 00 00 30 4B 01 80)
+
+define(duelAddress, pattern + 1C0)
+
+registersymbol(duelAddress)
+
+[DISABLE]
+
+unregistersymbol(tecAddress)
+
+</AssemblerScript>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>9</ID>
+          <Description>"Always S TEC"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+{$lua}
+
+if tecTimer then
+    tecTimer.destroy()
+    tecTimer = nil
+end
+
+if getAddressSafe("duelAddress") == nil then
+    print("Enable first")
+    return
+end
+
+local target = getAddress("duelAddress")
+
+local function applyBytes()
+    writeBytes(target + 0, 0x21)
+    writeBytes(target + 2, 0x0F)
+    writeBytes(target + 4, 0x0A)
+    writeBytes(target + 5, 0x07)
+    writeBytes(target + 7, 0x0F)
+    writeBytes(target + 8, 0x0F)
+end
+
+local firstByte = readBytes(target + 5, 1, true)
+if firstByte and firstByte[1] ~= 0x07 then
+    applyBytes()
+end
+
+tecTimer = createTimer(nil, false)
+tecTimer.Interval = 1000
+
+tecTimer.OnTimer = function()
+
+    if getOpenedProcessID() == 0 then
+        tecTimer.destroy()
+        tecTimer = nil
+        return
+    end
+
+    local current = readBytes(target + 5, 1, true)
+
+    if current == nil then
+        return
+    end
+
+    if current[1] ~= 0x07 then
+        applyBytes()
+    end
+end
+
+tecTimer.Enabled = true
+
+{$asm}
+
+[DISABLE]
+{$lua}
+
+if tecTimer then
+    tecTimer.Enabled = false
+    tecTimer.destroy()
+    tecTimer = nil
+end
+
+{$asm}
+
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>13</ID>
+          <Description>"Enemy 0 LP"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+{$lua}
+
+if lpTimer then
+    lpTimer.destroy()
+    lpTimer = nil
+end
+
+if getAddressSafe("duelAddress") == nil then
+    print("Enable first")
+    return
+end
+
+local target = getAddress("duelAddress")
+
+local value = readSmallInteger(target + 51)
+
+if value ~= nil and value ~= 0 then
+    writeSmallInteger(target + 51, 0)
+end
+
+lpTimer = createTimer(nil, false)
+lpTimer.Interval = 1000
+
+lpTimer.OnTimer = function()
+
+    if getOpenedProcessID() == 0 then
+        lpTimer.destroy()
+        lpTimer = nil
+        return
+    end
+
+    local current = readSmallInteger(target + 51)
+
+    if current == nil then
+        return
+    end
+
+    if current ~= 0 then
+        writeSmallInteger(target + 51, 0)
+    end
+end
+
+lpTimer.Enabled = true
+
+{$asm}
+
+[DISABLE]
+{$lua}
+
+if lpTimer then
+    lpTimer.Enabled = false
+    lpTimer.destroy()
+    lpTimer = nil
+end
+
+{$asm}
+
+
+</AssemblerScript>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
