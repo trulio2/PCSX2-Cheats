@@ -388,6 +388,17 @@ patch=1,EE,2041A00C,extended,00000000
 patch=1,EE,2041A250,extended,03E00008
 
 
+[(!) Auto Attack lol]
+author=Trulio
+description=
+patch=1,EE,E005102A,extended,00397CAC
+patch=1,EE,203A001C,extended,00000000
+patch=1,EE,203A8CA0,extended,00000000
+patch=1,EE,20405E18,extended,00000000
+patch=1,EE,2041A00C,extended,00000000
+patch=1,EE,2041A250,extended,03E00008
+
+
 [(!) Attacks And Spells Cost 1 AP]
 author=Trulio
 description=All attacks and spells cost 1 AP
